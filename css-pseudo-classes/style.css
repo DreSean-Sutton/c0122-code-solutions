@@ -1,0 +1,32 @@
+.container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  background-color: rgb(209 209 209);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  color: white;
+  background-color: black;
+}
+
+table {
+  margin: auto;
+}
+
+th {
+  color: white;
+  background-color: black;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(210 210 210);
+}

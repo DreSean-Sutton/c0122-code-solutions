@@ -1,0 +1,35 @@
+:root {
+  --light-color: white;
+}
+
+body {
+  color: var(--light-color);
+  background-color: rgb(25 150 218);
+  font-family: Lato, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 0.72rem;
+  font-weight: 300;
+  color: rgb(216 213 213);
+}
+
+.margin-left + .margin-left {
+  margin-left: 3rem;
+}
+
+.main-section {
+  padding: 3rem 0;
+}

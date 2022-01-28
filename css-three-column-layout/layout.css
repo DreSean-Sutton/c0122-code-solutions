@@ -1,0 +1,45 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-one-third {
+  width: calc(100% / 3);
+}
+
+.content-layout {
+  width: 85%;
+  margin: auto;
+}
+
+.img-column-layout {
+  width: 40%;
+  height: 75px;
+  background-color: var(--light-color);
+  margin: auto;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.img-layout {
+  width: 55%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.margin-auto {
+  margin: auto;
+}

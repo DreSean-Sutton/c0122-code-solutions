@@ -61,6 +61,14 @@ button {
   border-radius: 2px;
   padding: 0.6rem 2.2rem;
   letter-spacing: 0.4px;
+  cursor: pointer;
+}
+
+.button-layout > button:hover {
+  color: white;
+  background-color: rgb(215 102 96);
+  border-color: rgb(121 119 119);
+  transform: scale(1.2);
 }
 
 .padding-right-4rem {

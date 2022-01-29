@@ -1,0 +1,86 @@
+/* stylelint-disable selector-class-pattern */
+:root {
+  --text-color: rgb(158 157 157);
+  --button-background-color: hsl(213deg 42% 28%);
+  --whitesmoke: whitesmoke;
+}
+
+/* BASE CSS SELECTORS */
+h1 {
+  font-size: 1.8rem;
+  font-family: TiemposHeadline-Regular, serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* HEADER SECTIONRS */
+
+.header {
+  border-bottom: 1px solid hsl(200deg 10% 94%);
+}
+
+.nav--item {
+  display: inline-block;
+}
+
+.nav--item + .nav--item {
+  margin-left: 2rem;
+}
+
+.nav--link {
+  font-size: 0.8rem;
+}
+
+/* HERO SECTION */
+
+.overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 1%;
+  left: 0;
+  background-color: rgba(0 0 0 / 25%);
+}
+
+.hero-layout--text {
+  color: white;
+}
+
+.hero-layout--text > p {
+  font-size: 0.65rem;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+.hero-layout--text > a {
+  font-size: 0.8rem;
+}
+
+/* LOCATION SECTION */
+
+.locations {
+  background-color: var(--whitesmoke);
+  text-align: center;
+}
+
+/* UTILITY CLASSES */
+
+.button-layout {
+  color: white;
+  background-color: var(--button-background-color);
+}
+
+.special-font {
+  font-family: "Tiempos Headline", serif;
+}

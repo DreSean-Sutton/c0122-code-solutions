@@ -1,0 +1,72 @@
+/* stylelint-disable selector-class-pattern */
+
+/* BASE CSS SELECTORS */
+
+body {
+  font-family: Avenir, sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* HEADER SECTION */
+.logo--header {
+  width: 50%;
+}
+
+.nav--item > .button-layout {
+  padding: 0.5rem 0.75rem;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  padding: 4rem 0;
+}
+
+.hero-layout--text {
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 12%;
+}
+
+.hero-layout--text > a {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+}
+
+/* UTILITY CLASSES */
+
+.content-layout {
+  width: 90%;
+  margin: auto;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.button-layout {
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.margin-auto {
+  margin: auto;
+}

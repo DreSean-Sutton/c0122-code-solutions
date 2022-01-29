@@ -1,15 +1,26 @@
 /* stylelint-disable selector-class-pattern */
 :root {
-  --text-color: rgb(158 157 157);
+  --text-color: rgb(123 123 123);
   --button-background-color: hsl(213deg 42% 28%);
   --whitesmoke: whitesmoke;
 }
 
 /* BASE CSS SELECTORS */
+
+body {
+  color: var(--text-color);
+}
+
 h1 {
   font-size: 1.8rem;
   font-family: TiemposHeadline-Regular, serif;
   font-weight: 400;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-family: TiemposHeadline-Regular, serif;
+  font-weight: 900;
 }
 
 ul {
@@ -18,7 +29,6 @@ ul {
 }
 
 a {
-  color: var(--text-color);
   text-transform: capitalize;
   text-decoration: none;
 }
@@ -70,12 +80,53 @@ a {
 /* LOCATION SECTION */
 
 .locations {
+  padding: 2rem 0 4rem;
   background-color: var(--whitesmoke);
   text-align: center;
 }
 
-/* UTILITY CLASSES */
+.locations h2 {
+  text-transform: capitalize;
+}
 
+.text-layout-p--primary {
+  font-size: 0.65rem;
+  font-weight: bold;
+  line-height: 1.8em;
+  margin-bottom: 3rem;
+}
+
+.text-layout-p--secondary {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* LEARN MORE SECTION */
+
+.learn-more-button {
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+
+.learn-more span {
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+/* INFO SECTION */
+
+.info-section {
+  color: rgb(204 202 202);
+  background-color: rgb(82 83 81);
+}
+
+.info-section span {
+  font-size: 0.65rem;
+  font-weight: bold;
+  line-height: 1.7em;
+}
+
+/* UTILITY CLASSES */
 .button-layout {
   color: white;
   background-color: var(--button-background-color);

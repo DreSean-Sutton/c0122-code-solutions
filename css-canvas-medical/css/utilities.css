@@ -11,6 +11,10 @@ img {
   max-width: 100%;
 }
 
+span {
+  display: block;
+}
+
 /* HEADER SECTION */
 .logo--header {
   width: 50%;
@@ -38,6 +42,40 @@ img {
   padding: 0.75rem 2rem;
 }
 
+/* LOCATIONS SECTION */
+
+.locations h2 {
+  margin-bottom: 0;
+}
+
+/* LEARN MORE SECTION */
+
+.learn-more {
+  padding: 1.5rem 0;
+}
+
+.learn-more h2 {
+  margin-bottom: 0.25rem;
+}
+
+.learn-more-button {
+  padding: 0.6rem 1.6rem;
+}
+
+/* INFO SECTION */
+
+.info-section {
+  padding: 4rem 0;
+}
+
+.logo--info-section {
+  margin-bottom: 2rem;
+}
+
+.logo--info-section > img {
+  width: 50%;
+}
+
 /* UTILITY CLASSES */
 
 .content-layout {
@@ -55,12 +93,20 @@ img {
   justify-content: space-between;
 }
 
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
 .justify-content-end {
   justify-content: flex-end;
 }
 
 .align-items-center {
   align-items: center;
+}
+
+.text-align-right {
+  text-align: right;
 }
 
 .position-relative {

@@ -1,6 +1,7 @@
+/* stylelint-disable no-descending-specificity */
 /* stylelint-disable selector-class-pattern */
 :root {
-  --text-color: rgb(123 123 123);
+  --text-color: rgb(150 150 150);
   --button-background-color: hsl(213deg 42% 28%);
   --whitesmoke: whitesmoke;
 }
@@ -12,13 +13,13 @@ body {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-family: TiemposHeadline-Regular, serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-family: TiemposHeadline-Regular, serif;
   font-weight: 900;
 }
@@ -36,19 +37,21 @@ a {
 /* HEADER SECTIONRS */
 
 .header {
-  border-bottom: 1px solid hsl(200deg 10% 94%);
+  border-bottom: 2px solid hsl(200deg 10% 94%);
 }
 
-.nav--item {
+.nav__item {
   display: inline-block;
 }
 
-.nav--item + .nav--item {
-  margin-left: 2rem;
+.nav__link {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 700;
 }
 
-.nav--link {
-  font-size: 0.8rem;
+.nav__item > .button-layout {
+  font-weight: 400;
 }
 
 /* HERO SECTION */
@@ -58,23 +61,23 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 1%;
+  bottom: 0.75%;
   left: 0;
-  background-color: rgba(0 0 0 / 25%);
+  background-color: rgba(120 120 120 / 35%);
 }
 
-.hero-layout--text {
+.hero-layout__text {
   color: white;
 }
 
-.hero-layout--text > p {
-  font-size: 0.65rem;
-  font-weight: 300;
-  line-height: 2em;
+.hero-layout__text > p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7em;
 }
 
-.hero-layout--text > a {
-  font-size: 0.8rem;
+.hero-layout__text > a {
+  font-size: 1.3rem;
 }
 
 /* LOCATION SECTION */
@@ -82,6 +85,7 @@ a {
 .locations {
   padding: 2rem 0 4rem;
   background-color: var(--whitesmoke);
+  border-bottom: 2px solid hsl(200deg 10% 94%);
   text-align: center;
 }
 
@@ -89,47 +93,84 @@ a {
   text-transform: capitalize;
 }
 
-.text-layout-p--primary {
-  font-size: 0.65rem;
-  font-weight: bold;
+.text-layout__p--primary {
+  font-size: 0.9rem;
+  font-weight: 700;
   line-height: 1.8em;
-  margin-bottom: 3rem;
 }
 
-.text-layout-p--secondary {
-  font-size: 0.8rem;
+.text-layout__p--secondary {
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
 /* LEARN MORE SECTION */
 
-.learn-more-button {
-  font-size: 0.8rem;
+.learn-more h2 {
+  color: rgb(130 131 130);
+  font-size: 1.9rem;
+}
+
+.learn-more__button {
+  font-size: 1.2rem;
+  font-weight: 400;
   color: var(--text-color);
 }
 
 .learn-more span {
-  font-size: 0.6rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 /* INFO SECTION */
 
 .info-section {
-  color: rgb(204 202 202);
+  color: rgb(217 213 213);
   background-color: rgb(82 83 81);
 }
 
+.info-section h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .info-section span {
-  font-size: 0.65rem;
+  font-size: 1rem;
   font-weight: bold;
-  line-height: 1.7em;
+  line-height: 1.8em;
+}
+
+.info-section a {
+  color: rgb(217 213 213);
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* FOOTER SECTION */
+
+.footer-section {
+  background-color: var(--whitesmoke);
+}
+
+.footer-nav__link {
+  color: rgb(99 99 99);
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 /* UTILITY CLASSES */
+
 .button-layout {
   color: white;
   background-color: var(--button-background-color);
+}
+
+.button-layout:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+  transition: 50ms ease-in;
 }
 
 .special-font {

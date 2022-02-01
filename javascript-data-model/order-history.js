@@ -42,7 +42,7 @@ var orderHistory = [
     items: [
       {
         title: 'Gamecube Controller Adapter',
-        author: NaN,
+        author: null,
         price: 15.98
       }
     ]

@@ -58,7 +58,7 @@ var orderHistory = [
     items: [
       {
         title: 'Gamecube Controller',
-        author: NaN,
+        author: null,
         price: 94.95
       },
       {

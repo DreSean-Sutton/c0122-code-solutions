@@ -1,0 +1,24 @@
+/* BASE SELECTORS */
+
+main {
+  padding: 0.5rem 0 1.5rem;
+}
+
+h3 {
+  margin-bottom: 2rem;
+}
+
+/* UTILITY CLASSES */
+
+.icons-layout {
+  width: 23%;
+}
+
+.content-layout {
+  width: 80%;
+  margin: auto;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}

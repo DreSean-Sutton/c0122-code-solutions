@@ -1,0 +1,27 @@
+.container {
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-three-quarter {
+  width: 75%;
+}
+
+.column-half {
+  width: 50%;
+}
+
+.column-one-quarter {
+  width: 25%;
+}
+
+.column-one-fifth {
+  width: 20%;
+}

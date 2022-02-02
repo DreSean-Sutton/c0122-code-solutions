@@ -1,0 +1,50 @@
+:root {
+  --background-text-color: rgb(236 224 214);
+  --grey-text: rgb(200 200 200);
+}
+
+/* BASE CSS SELECTORS */
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+
+span {
+  color: var(--grey-text);
+}
+
+/* UTILITY CLASSES */
+
+.align-items-flex-end {
+  align-items: flex-end;
+}
+
+.capitalized-text {
+  text-transform: capitalize;
+}
+
+.line-through {
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.grey-text-coler {
+  font-weight: 400;
+  color: var(--grey-text);
+}
+
+.text-background-color {
+  color: black;
+  background-color: var(--background-text-color);
+}

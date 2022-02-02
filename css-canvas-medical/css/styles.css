@@ -14,13 +14,13 @@ body {
 
 h1 {
   font-size: 2.4rem;
-  font-family: TiemposHeadline-Regular, serif;
-  font-weight: 700;
+  font-family: "Tiempos Headline", serif;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 1.8rem;
-  font-family: TiemposHeadline-Regular, serif;
+  font-family: "Tiempos Headline", serif;
   font-weight: 900;
 }
 

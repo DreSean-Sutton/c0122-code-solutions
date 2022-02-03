@@ -25,7 +25,7 @@ function isEven(number) {
 }
 
 function startsWithJ(string) {
-  if (string[0] === 'j'.toUpperCase()) {
+  if (string[0] === 'J') {
     return true;
   } else {
     return false;

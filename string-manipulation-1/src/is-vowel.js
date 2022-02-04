@@ -1,13 +1,22 @@
 /* exported isVowel */
 
 /*
--if the test method of the regex /aeiou/i with str as it's parameter is true
+-if str is strictly equal to a, A, e, E, i, I, o, O, u, or U
   return true
 -return false;
 */
 
 function isVowel(str) {
-  if (/[aeiou]/i.test(str)) {
+  if ((str === 'a') ||
+      (str === 'A') ||
+      (str === 'e') ||
+      (str === 'E') ||
+      (str === 'i') ||
+      (str === 'I') ||
+      (str === 'o') ||
+      (str === 'O') ||
+      (str === 'u') ||
+      (str === 'U')) {
     return true;
   }
   return false;

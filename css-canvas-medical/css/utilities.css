@@ -1,0 +1,165 @@
+/* stylelint-disable selector-class-pattern */
+
+/* BASE CSS SELECTORS */
+
+body {
+  font-family: Avenir, sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+span {
+  display: block;
+}
+
+/* HEADER SECTION */
+.header__logo {
+  width: 50%;
+}
+
+.nav__item + .nav__item {
+  margin-left: 3rem;
+}
+
+.nav__item:last-child {
+  margin-left: 1.5rem;
+}
+
+.nav__item > .button-layout {
+  padding: 0.8em 1.25em;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  padding: 4rem 0;
+}
+
+.hero-layout__text {
+  width: 45%;
+  position: absolute;
+  top: 12%;
+  left: 8%;
+}
+
+.hero-layout__text > a {
+  margin-top: 1rem;
+  padding: 0.9em 3.2rem;
+}
+
+/* LOCATIONS SECTION */
+
+.locations h2 {
+  margin-bottom: 0;
+}
+
+.text-layout__p--primary {
+  margin-bottom: 4rem;
+}
+
+.text-layout__p--secondary > p + p {
+  margin-top: 1.75rem;
+}
+
+/* LEARN MORE SECTION */
+
+.learn-more {
+  padding: 2rem 0 3rem;
+}
+
+.learn-more h2 {
+  margin-bottom: 1rem;
+}
+
+.learn-more__button {
+  padding: 0.9em 3em;
+}
+
+/* INFO SECTION */
+
+.info-section {
+  padding: 8rem 0;
+}
+
+.info-section__logo {
+  margin-bottom: 2rem;
+}
+
+.info-section h3 {
+  margin-top: 0;
+}
+
+.info-section__logo > img {
+  width: 50%;
+}
+
+.info-section a {
+  display: inline-block;
+}
+
+.info-section a + a {
+  margin-top: 1rem;
+}
+
+/* FOOTER SECTION */
+
+.footer-section {
+  padding: 2rem 0;
+}
+
+.footer-nav__item + .footer-nav__item {
+  margin-left: 2.5rem;
+}
+
+/* UTILITY CLASSES */
+
+.content-layout {
+  width: 90%;
+  margin: auto;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.button-layout {
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.margin-auto {
+  margin: auto;
+}

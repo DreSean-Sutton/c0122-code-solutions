@@ -2,28 +2,44 @@
 console.log('Lodash is loaded:', typeof _ !== 'undefined');
 
 /*
--create a variable named cardPoints and assign it the value of 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11 in an array literal
--create a variable named deck and assign it the value of an empty array literal
--create a variable named players and assign it an array literal with the objects name: 'player-1', hand: empty array literal
-a. name: 'player-2', hand: empty array literal
-b. name: 'player-3', hand: empty array literal
-c. name: 'player-4', hand: empty array literal
--create a for loop that:
-a. assigns the value of 0 to i
-b. executes code block if i is less than cardPoints.length
-c. i++
-  -create an object variable named spadeCards and assign it the value of the property rank with a value of cardPoints at index i
-  a. and the property suit with a value of 'spades'
-  -create an object variable named heartCards and assign it the value of the property rank with a value of cardPoints at index i
-  a. and the property suit with a value of 'hearts'
-  -create an object variable named clubCards and assign it the value of the property rank with a value of cardPoints at index i
-  a. and the property suit with a value of 'clubs'
-  -create an object variable named diamondCards and assign it the value of the property rank with a value of cardPoints at index i
-  a. and the property suit with a value of 'diamonds'
-  -call the push method of deck with diamondCards, heartCards, clubCards, and spadeCards at it's arguments
--call the _.shuffle method with deck as it's argument
--call the playGame function with players as it's argument
--create a function named playGame with players as it's parameter
+-define a function called highestNumber with 2 parameters numberOfPlayers and cardsPerPlayer
+  -create a variable named cardPoints and assign it the value of 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11 in an array literal
+  -create a variable named deck and assign it the value of an empty array literal
+  -create a variable named players and assign it the value of an array literal
+  -create a for loop that:
+  a. assigns the value of 1 to l
+  b. executes code block if l is less than numberOfPlayers + 1
+  c. l++
+    -call the push method of players with an object with the property name and a value of
+    a. the template literal `player ${l}`, property hand with the value of an array literal as it's value,
+    b. property stillIn with the boolean value of true, and the property score with the value of 0
+  -create a for loop that:
+  a. assigns the value of 0 to i
+  b. executes code block if i is less than cardPoints.length
+  c. i++
+    -create an object variable named spadeCards and assign it the value of the property rank with a value of cardPoints at index i
+    a. and the property suit with a value of 'spades'
+    -create an object variable named heartCards and assign it the value of the property rank with a value of cardPoints at index i
+    a. and the property suit with a value of 'hearts'
+    -create an object variable named clubCards and assign it the value of the property rank with a value of cardPoints at index i
+    a. and the property suit with a value of 'clubs'
+    -create an object variable named diamondCards and assign it the value of the property rank with a value of cardPoints at index i
+    a. and the property suit with a value of 'diamonds'
+    -call the push method of deck with diamondCards, heartCards, clubCards, and spadeCards at it's arguments
+-return playGame function with players, deck, and cardsPerPlayer as it's arguments
+
+-create a function named serve with player, deck, and cardsPerPlayer as it's parameters
+  -create a for loop that:
+  a. assigns the value of 0 to m
+  b. executes code block if m is less than cardsPerPlayer
+  c. m++
+    -call the push method of the hand property of player with deck[m]
+    -assign the value of the rank property of the deck object + the score property of
+    a. the player object to the score property of the player object
+  -call the splice method of deck with 0 and cardsPerPlayer as it's arguments
+
+-create a function named playGame with players, deck, cardsPerPlayer as it's parameters
+  -call the _.shuffle method with deck as it's argument and assign its value to a variable named shuffledDeck
   -create a variable named scoreBoard and assign it the value of an empty array literal
   -create a variable named winnerCounter and assign it the value of 0
   -create a variable named winnerArr and assign it the value of an empty array literal
@@ -31,15 +47,16 @@ c. i++
     a. assigns the value of 0 to j
     b. execute code block if j is less than players.length
     c. j++
+    -assign the value of 0 to the score property of players at index j
     -assign the value of an empty array literal to the property hand of the object players at index j
     -if the stillIn property of players at index j is strictly equal to true:
-      call the serve function with players at index j and the variable shuffledDeck as it's arguments
+      call the serve function with players at index j, shuffledDeck, and cardsPerPlayer as it's arguments
     -call the push method of scoreBoard with the propterty score of the players object at index j as it's argument
   -call the sort method of scoreBoard with an ananymous function as it's argument
   -create a for loop that:
-    a. assigns the value of 0 to k
-    b. executes code block if k is less than the length method of players
-    c. k++
+  a. assigns the value of 0 to k
+  b. executes code block if k is less than the length method of players
+  c. k++
     -if the score property of the players object at index k is strictly equal to scoreBoard at the index of the length
     a. property of scoreBoard - 1:
       increment winnerCounter by 1
@@ -50,20 +67,13 @@ c. i++
     return the playGame function with winnerArr as it's argument
   -create a variable named winner and assign it the value of the template literal string
   a. the name property of winnerArr at index 0 'is the winner with' the score property of winnerArr at index 0 'points!'
-  -call the log method of console with 2 arguments. The string winnerResults: ' and the variable winner
   -return winner
--create a function named serve with player and deck as it's parameters
-  -call the push method of the hand property of player with deck[0] and deck[1] as it's arguments
-  -assign the value of the rank property of the hand property at index 0 of the player object plus
-  a. the rank property of the hand property at index 1 of the player object to the score property of the player object
-  -call the splice method of deck with 0 and 2 as it's arguments
 */
-highestNumber(5, 5);
 function highestNumber(numberOfPlayers, cardsPerPlayer) {
   var cardPoints = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11];
-
   var deck = [];
   var players = [];
+
   for (var l = 1; l < numberOfPlayers + 1; l++) {
     players.push({
       name: `player ${l}`,
@@ -71,7 +81,6 @@ function highestNumber(numberOfPlayers, cardsPerPlayer) {
       stillIn: true,
       score: 0
     });
-    console.log('testing players: ', players);
   }
 
   for (var i = 0; i < cardPoints.length; i++) {
@@ -136,6 +145,5 @@ function playGame(players, deck, cardsPerPlayer) {
   }
 
   var winner = `${winnerArr[0].name} is the winner with ${winnerArr[0].score} points!`;
-  console.log('winnerResults: ', winner);
   return winner;
 }

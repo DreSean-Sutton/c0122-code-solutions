@@ -77,8 +77,10 @@ var shuffledDeck = _.shuffle(deck);
 playGame(players);
 
 function playGame(players) {
+  // debugger;
   var scoreBoard = [];
   var winnerCounter = 0;
+  var winnerArr = [];
   for (var j = 0; j < players.length; j++) {
     players[j].hand = [];
     if (players[j].stillIn === true) {
@@ -87,8 +89,22 @@ function playGame(players) {
     scoreBoard.push(players[j].score);
   }
   scoreBoard.sort(function (a, b) { return a - b; });
-  console.log(scoreBoard);
-  // if tie call shuffle()
+  console.log('scoreBoard result: ', scoreBoard);
+  for (var k = 0; k < players.length; k++) {
+    if (players[k].score === scoreBoard[scoreBoard.length - 1]) {
+      winnerCounter++;
+      winnerArr.push(players[k]);
+      console.log('winnerArr results: ', winnerArr);
+    } else {
+      players[k].stillIn = false;
+    }
+  }
+  if (winnerCounter > 1) {
+    playGame(winnerArr, shuffledDeck);
+  }
+  var winner = `${winnerArr[0].name} is the winner with ${winnerArr[0].score} points!`;
+  console.log('winnerResults: ', winner);
+  return winner;
 }
 
 function serve(player, deck) {
@@ -96,3 +112,6 @@ function serve(player, deck) {
   player.score = player.hand[0].rank + player.hand[1].rank;
   deck.splice(0, 2);
 }
+
+// FIX RESULTS IF MORE THAN ONE PERSON WINS
+// CONSOLE.LOG HAPPENING MULTIPLE TIMES IF MORE THAN ONE PERSON WINS

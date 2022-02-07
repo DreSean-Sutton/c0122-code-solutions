@@ -58,67 +58,67 @@ c. i++
   a. the rank property of the hand property at index 1 of the player object to the score property of the player object
   -call the splice method of deck with 0 and 2 as it's arguments
 */
-var cardPoints = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11];
+highestNumber(5, 5);
+function highestNumber(numberOfPlayers, cardsPerPlayer) {
+  var cardPoints = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11];
 
-var deck = [];
+  var deck = [];
+  var players = [];
+  for (var l = 1; l < numberOfPlayers + 1; l++) {
+    players.push({
+      name: `player ${l}`,
+      hand: [],
+      stillIn: true,
+      score: 0
+    });
+    console.log('testing players: ', players);
+  }
 
-var players = [{
-  name: 'player 1',
-  hand: [],
-  stillIn: true
-},
-{
-  name: 'player 2',
-  hand: [],
-  stillIn: true
-},
-{
-  name: 'player 3',
-  hand: [],
-  stillIn: true
-},
-{
-  name: 'player 4',
-  hand: [],
-  stillIn: true
-}];
+  for (var i = 0; i < cardPoints.length; i++) {
 
-for (var i = 0; i < cardPoints.length; i++) {
+    var spadeCards = {
+      rank: cardPoints[i],
+      suit: 'spades'
+    };
 
-  var spadeCards = {
-    rank: cardPoints[i],
-    suit: 'spades'
-  };
+    var heartCards = {
+      rank: cardPoints[i],
+      suit: 'hearts'
+    };
 
-  var heartCards = {
-    rank: cardPoints[i],
-    suit: 'hearts'
-  };
+    var clubCards = {
+      rank: cardPoints[i],
+      suit: 'clubs'
+    };
 
-  var clubCards = {
-    rank: cardPoints[i],
-    suit: 'clubs'
-  };
+    var diamondCards = {
+      rank: cardPoints[i],
+      suit: 'diamonds'
+    };
 
-  var diamondCards = {
-    rank: cardPoints[i],
-    suit: 'diamonds'
-  };
-
-  deck.push(diamondCards, heartCards, clubCards, spadeCards);
+    deck.push(diamondCards, heartCards, clubCards, spadeCards);
+  }
+  return playGame(players, deck, cardsPerPlayer);
 }
 
-var shuffledDeck = _.shuffle(deck);
-playGame(players);
+function serve(player, deck, cardsPerPlayer) {
+  for (var m = 0; m < cardsPerPlayer; m++) {
+    player.hand.push(deck[m]);
+    player.score += deck[m].rank;
+  }
+  deck.splice(0, cardsPerPlayer);
+}
 
-function playGame(players) {
+function playGame(players, deck, cardsPerPlayer) {
+  var shuffledDeck = _.shuffle(deck);
   var scoreBoard = [];
   var winnerCounter = 0;
   var winnerArr = [];
   for (var j = 0; j < players.length; j++) {
+    players[j].score = 0;
     players[j].hand = [];
     if (players[j].stillIn === true) {
-      serve(players[j], shuffledDeck);
+      serve(players[j], shuffledDeck, cardsPerPlayer);
     }
     scoreBoard.push(players[j].score);
   }
@@ -132,16 +132,10 @@ function playGame(players) {
     }
   }
   if (winnerCounter > 1) {
-    return playGame(winnerArr);
+    return playGame(winnerArr, deck, cardsPerPlayer);
   }
 
   var winner = `${winnerArr[0].name} is the winner with ${winnerArr[0].score} points!`;
   console.log('winnerResults: ', winner);
   return winner;
-}
-
-function serve(player, deck) {
-  player.hand.push(deck[0], deck[1]);
-  player.score = player.hand[0].rank + player.hand[1].rank;
-  deck.splice(0, 2);
 }

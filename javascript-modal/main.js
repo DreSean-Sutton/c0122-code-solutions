@@ -10,12 +10,15 @@ function showModal() {
   modalShowing = true;
   $modal.classList.remove('slow-close');
   $modal.classList.add('slow-open');
+  $modal.classList.remove('hidden');
 }
 
 function hideModal() {
   modalShowing = false;
   $modal.classList.remove('slow-open');
   $modal.classList.add('slow-close');
+  // $modal.classList.add('hidden');
+  setTimeout(() => $modal.classList.add('hidden'), 500);
 }
 
 function openModal(event) {

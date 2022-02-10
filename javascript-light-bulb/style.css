@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.lightbulb-layout {
+  width: 300px;
+  min-height: 300px;
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 300ms;
+}
+
+.lightbulb-layout:hover {
+  transform: scale(1.1);
+}
+
+.content-layout {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  margin: auto;
+  height: 100vh;
+}
+
+.container.light-mode {
+  background-color: white;
+}
+
+.container.dark-mode {
+  background-color: rgb(17 17 17);
+}
+
+.row {
+  display: flex;
+}
+
+/* .column {
+
+} */
+
+.column.light-mode {
+  background-color: rgb(250 234 132);
+}
+
+.column.dark-mode {
+  background-color: rgb(34 35 36);
+  box-shadow: 0 -10px 6px 3px rgb(8 8 8);
+}

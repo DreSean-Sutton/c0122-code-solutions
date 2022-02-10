@@ -1,0 +1,131 @@
+:root {
+  --open-modal-color: rgb(74 74 233);
+  --survey-button-color: rgb(235 93 93);
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.open-modal {
+  color: #fff;
+  background-color: var(--open-modal-color);
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  transition: transform 300ms;
+  cursor: pointer;
+}
+
+.open-modal:hover {
+  transform: scale(1.05, 1.23);
+}
+
+.modal {
+  text-align: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 0 9999px rgb(0 0 0 / 85%);
+}
+
+.modal.slow-open {
+  transform: scale(1);
+  animation: scale-up 500ms;
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0.01);
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 0%);
+  }
+
+  1% {
+    /* display: initial; */
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 1%);
+  }
+
+  20% {
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 17%);
+  }
+
+  40% {
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 34%);
+  }
+
+  60% {
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 51%);
+  }
+
+  80% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 68%);
+  }
+
+  /* 99% {
+  } */
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 85%);
+  }
+}
+
+.modal.slow-close {
+  transform: scale(0);
+  animation: scale-down 500ms;
+}
+
+@keyframes scale-down {
+  0% {
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 85%);
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 68%);
+  }
+
+  40% {
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 51%);
+  }
+
+  60% {
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 34%);
+  }
+
+  80% {
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 17%);
+  }
+
+  99% {
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 1%);
+  }
+
+  100% {
+    display: hidden;
+    transform: scale(0);
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 0%);
+  }
+}
+
+.survey-button {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: var(--survey-button-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 200000ms;
+  box-shadow: 1px 1px 5px grey;
+}
+
+.survey-button:hover {
+  transform: scale(20);
+}

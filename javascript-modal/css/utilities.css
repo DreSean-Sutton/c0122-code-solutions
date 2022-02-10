@@ -1,0 +1,29 @@
+h2 {
+  margin-top: 3.5rem;
+}
+
+.open-modal {
+  padding: 0.4em 1.25em;
+  margin: 0.5rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.modal {
+  border-radius: 7px;
+}
+
+.content-layout {
+  width: 30%;
+  height: 225px;
+  margin: auto;
+  justify-content: center;
+}
+
+.survey-button {
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+}

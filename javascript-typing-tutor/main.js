@@ -4,11 +4,12 @@ var $testButton = document.querySelector('#test-button');
 var $modal = document.querySelector('#modal');
 var $overlay = document.querySelector('#overlay');
 var $noButton = document.querySelector('#no-button');
-// var $yesButton = document.querySelector('#yes-button')
+var $yesButton = document.querySelector('#yes-button');
 
 document.addEventListener('keydown', typingTutor);
 $testButton.addEventListener('click', testingButton);
 $noButton.addEventListener('click', handleNoButton);
+$yesButton.addEventListener('click', handleYesButton);
 
 function testingButton(event) {
   if (event.target === $testButton) {
@@ -17,10 +18,12 @@ function testingButton(event) {
   }
 }
 
+function openModal() {
+  $overlay.classList.remove('hidden');
+  $modal.classList.remove('hidden');
+}
+
 function typingTutor(event) {
-  if (currentLetterIndex === $allSpans.length) {
-    return;
-  }
 
   $allSpans[currentLetterIndex].classList.add('border-bottom');
   if (event.key === $allSpans[currentLetterIndex].textContent) {
@@ -34,14 +37,9 @@ function typingTutor(event) {
   } else {
     $allSpans[currentLetterIndex].classList.add('wrong-choice');
   }
-  if ($allSpans[$allSpans.length - 1].classList === 'correct-choice border-bottom') {
-    currentLetterIndex = 0;
-    for (var i = 0; i < $allSpans.length; i++) {
-      $allSpans[i].classList.remove('correct-choice');
-      if (i > 0) {
-        $allSpans[i].classList.remove('wrong-choice border-bottom');
-      }
-    }
+
+  if (currentLetterIndex === $allSpans.length) {
+    openModal();
   }
 }
 
@@ -49,5 +47,19 @@ function handleNoButton(event) {
   if (event.target === $noButton) {
     $modal.classList.add('hidden');
     $overlay.classList.add('hidden');
+  }
+}
+
+function handleYesButton(event) {
+  if (event.target === $yesButton) {
+    currentLetterIndex = 0;
+    $modal.classList.add('hidden');
+    $overlay.classList.add('hidden');
+    for (var i = 0; i < $allSpans.length; i++) {
+      $allSpans[i].classList.remove('correct-choice');
+      if (i > 0) {
+        $allSpans[i].classList.remove('wrong-choice', 'border-bottom');
+      }
+    }
   }
 }

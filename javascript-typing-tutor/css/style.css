@@ -1,0 +1,26 @@
+:root {
+  --correct-choice-color: rgb(25 205 28);
+  --wrong-choice-color: rgb(248 6 6);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+span {
+  padding-bottom: 1rem;
+  white-space: pre;
+}
+
+.border-bottom {
+  border-bottom: 4px solid;
+}
+
+.correct-choice {
+  color: var(--correct-choice-color);
+}
+
+.wrong-choice {
+  color: var(--wrong-choice-color);
+}

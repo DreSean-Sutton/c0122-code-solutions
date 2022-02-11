@@ -5,10 +5,3 @@
 .row {
   display: flex;
 }
-
-.content-layout {
-  min-height: 95vh;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-}

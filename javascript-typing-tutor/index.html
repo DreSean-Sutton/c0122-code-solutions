@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/style.css">
   <title>JavaScript Typing Tutor</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container position-relative">
+    <div class="overlay"></div>
     <div class="row content-layout">
       <div class="">
         <h1>
@@ -44,8 +46,18 @@
           <span>r</span>
           <span>e</span>
           <span>w</span>
-
         </h1>
+      </div>
+    </div>
+    <div class="row modal-layout">
+      <div>
+        <h2>congrats!</h2>
+        <p id="player-score">score: </p>
+        <p>play again?</p>
+        <div class="row button-layout">
+          <button id="yes-button" class="yes-button">yes</button>
+          <button id="no-button" class="no-button">no</button>
+        </div>
       </div>
     </div>
   </div>

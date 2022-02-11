@@ -22,7 +22,7 @@ section {
   font-size: 1rem;
   color: white;
   background-color: blue;
-  transition: 500ms;
+  transition: background-color 500ms;
 }
 
 .custom-button:hover {
@@ -42,7 +42,7 @@ section {
   background-color: white;
   cursor: pointer;
   transform: scale(1);
-  transition: 500ms;
+  transition: transform 500ms;
 }
 
 .card:hover {

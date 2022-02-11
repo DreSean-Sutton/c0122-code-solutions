@@ -1,10 +1,15 @@
-var $allSpans = document.querySelectorAll('span');
 var currentLetterIndex = 0;
+var correctLetters = 0;
+var wrongLetters = 0;
+
+var $allSpans = document.querySelectorAll('span');
 var $testButton = document.querySelector('#test-button');
 var $modal = document.querySelector('#modal');
 var $overlay = document.querySelector('#overlay');
 var $noButton = document.querySelector('#no-button');
 var $yesButton = document.querySelector('#yes-button');
+var $correctAnswers = document.querySelector('#correct-answers');
+var $wrongAnswers = document.querySelector('#wrong-answers');
 
 document.addEventListener('keydown', typingTutor);
 $testButton.addEventListener('click', testingButton);
@@ -34,12 +39,20 @@ function typingTutor(event) {
       $allSpans[currentLetterIndex + 1].classList.add('border-bottom');
     }
     currentLetterIndex++;
+    correctLetters++;
   } else {
     $allSpans[currentLetterIndex].classList.add('wrong-choice');
+    wrongLetters++;
   }
 
   if (currentLetterIndex === $allSpans.length) {
     openModal();
+    $correctAnswers.textContent = `Correct: ${correctLetters}!`;
+    if (wrongLetters > 0) {
+      $wrongAnswers.textContent = `Wrong: ${wrongLetters} :(`;
+    } else {
+      $wrongAnswers.textContent = `Wrong: ${wrongLetters}! :D`;
+    }
   }
 }
 
@@ -53,6 +66,8 @@ function handleNoButton(event) {
 function handleYesButton(event) {
   if (event.target === $yesButton) {
     currentLetterIndex = 0;
+    correctLetters = 0;
+    wrongLetters = 0;
     $modal.classList.add('hidden');
     $overlay.classList.add('hidden');
     for (var i = 0; i < $allSpans.length; i++) {

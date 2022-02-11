@@ -4,6 +4,10 @@ var currentLetterIndex = 0;
 document.addEventListener('keydown', typingTutor);
 
 function typingTutor(event) {
+  if (currentLetterIndex === $allSpans.length) {
+    return;
+  }
+
   $allSpans[currentLetterIndex].classList.add('border-bottom');
   if (event.key === $allSpans[currentLetterIndex].textContent) {
     $allSpans[currentLetterIndex].classList.remove('wrong-choice');
@@ -13,5 +17,14 @@ function typingTutor(event) {
     currentLetterIndex++;
   } else {
     $allSpans[currentLetterIndex].classList.add('wrong-choice');
+  }
+  if ($allSpans[$allSpans.length - 1].classList.includes('correct-choice')) {
+    currentLetterIndex = 0;
+    for (var i = 0; i < $allSpans.length; i++) {
+      $allSpans[i].classList.remove('correct-choice');
+      if (i > 0) {
+        $allSpans[i].classList.remove('wrong-choice border-bottom');
+      }
+    }
   }
 }

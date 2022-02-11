@@ -3,9 +3,16 @@
   --wrong-choice-color: rgb(248 6 6);
 }
 
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
 h2,
-p,
-button {
+p {
   text-transform: capitalize;
 }
 
@@ -15,7 +22,15 @@ h1 {
   font-family: monospace;
 }
 
-span {
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h1 > span {
   padding-bottom: 1rem;
   white-space: pre;
 }
@@ -32,13 +47,41 @@ span {
   color: var(--wrong-choice-color);
 }
 
-.yes-button,
-.no-button {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: white;
-  border: none;
-  border-radius: 10px;
+/* MODAL SECTION */
+
+.modal-layout {
+  background: linear-gradient(90deg, hsl(141deg 91% 58%), hsl(216deg 100% 44%));
+}
+
+.modal-animation {
+  transform: scale(1);
+  transition: modal-scale-up 800ms;
+}
+
+@keyframes modal-scale-up {
+  0% {
+    transform: scale(0.01) rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  80% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .yes-button {
@@ -47,6 +90,28 @@ span {
 
 .no-button {
   background-color: red;
+}
+
+.yes-button,
+.no-button {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 200ms;
+}
+
+.yes-button:hover,
+.no-button:hover {
+  transform: scale(1.1);
+}
+
+.yes-button:active,
+.no-button:active {
+  transform: translateY(5px);
 }
 
 .overlay {
@@ -58,4 +123,26 @@ span {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.overlay-animation {
+  transition: overlay-scale-up 1000ms;
+}
+
+@keyframes overlay-scale-up {
+  0% {
+    background-color: rgba(0 0 0 / 0%);
+  }
+
+  100% {
+    background-color: rgba(0 0 0 / 85%);
+  }
+}
+
+#test-button {
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
 }

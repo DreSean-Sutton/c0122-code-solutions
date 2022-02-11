@@ -5,3 +5,7 @@
 .row {
   display: flex;
 }
+
+.column-four-fifth {
+  width: 80%;
+}

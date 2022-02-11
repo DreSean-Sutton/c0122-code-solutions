@@ -14,10 +14,8 @@ function viewSwapping(event) {
   for (var i = 0; i < $allTabs.length; i++) {
     if (event.target === $allTabs[i]) {
       $allTabs[i].classList.add('active');
-      $allViews[i].classList.add('active');
     } else {
       $allTabs[i].classList.remove('active');
-      $allViews[i].classList.remove('active');
     }
   }
   for (var j = 0; j < $allViews.length; j++) {

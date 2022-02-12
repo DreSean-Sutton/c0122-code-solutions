@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="container position-relative">
-    <div id="overlay" class="overlay overlay-animation hidden"></div>
+    <div id="overlay" class="overlay hidden"></div>
     <div class="row content-layout">
       <div class="">
         <h1>
@@ -47,9 +47,12 @@
           <span>e</span>
           <span>w</span>
         </h1>
+        <button id="stats-button" class="stats-button hidden">check stats</button>
+        <button id="reset-button" class="reset-button">reset</button>
+        <button id="backup-reset-button" class="reset-button hidden">reset</button>
       </div>
     </div>
-    <div id="modal" class="row modal-layout modal-animation hidden">
+    <div id="modal" class="row modal-layout hidden">
       <div class="column-four-fifth">
         <h2>congrats!</h2>
         <p id="correct-answers"></p>
@@ -61,7 +64,6 @@
         </div>
       </div>
     </div>
-    <a href="#" id="test-button">Test Button</a>
   </div>
   <script src="main.js"></script>
 </body>

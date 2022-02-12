@@ -47,6 +47,28 @@ h1 > span {
   color: var(--wrong-choice-color);
 }
 
+.stats-button {
+  background-color: var(--correct-choice-color);
+}
+
+.reset-button {
+  position: relative;
+  right: 2%;
+  background-color: var(--wrong-choice-color);
+}
+
+.stats-button,
+.reset-button {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: monospace;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
 /* MODAL SECTION */
 
 .modal-layout {
@@ -55,20 +77,32 @@ h1 > span {
 
 .modal-animation {
   transform: scale(1);
-  transition: modal-scale-up 800ms;
+  animation: modal-scale-up 300ms;
 }
 
 @keyframes modal-scale-up {
   0% {
-    transform: scale(0.01) rotate(0deg);
+    transform: scale(0.01);
+  }
+
+  20% {
+    transform: scale(0.2);
   }
 
   25% {
     transform: rotate(90deg);
   }
 
+  40% {
+    transform: scale(0.3);
+  }
+
   50% {
     transform: rotate(180deg);
+  }
+
+  60% {
+    transform: scale(0.5);
   }
 
   75% {
@@ -76,11 +110,11 @@ h1 > span {
   }
 
   80% {
-    transform: scale(1.1);
+    transform: scale(1.4);
   }
 
   100% {
-    transform: scale(1) rotate(360deg);
+    transform: scale(1) rotate(0deg);
   }
 }
 
@@ -105,12 +139,16 @@ h1 > span {
 }
 
 .yes-button:hover,
-.no-button:hover {
+.no-button:hover,
+.stats-button:hover,
+.reset-button:hover {
   transform: scale(1.1);
 }
 
 .yes-button:active,
-.no-button:active {
+.no-button:active,
+.stats-button:active,
+.reset-button:active {
   transform: translateY(5px);
 }
 
@@ -126,7 +164,7 @@ h1 > span {
 }
 
 .overlay-animation {
-  transition: overlay-scale-up 1000ms;
+  animation: overlay-scale-up 500ms;
 }
 
 @keyframes overlay-scale-up {

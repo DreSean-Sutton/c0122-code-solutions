@@ -3,11 +3,13 @@ h2 {
 }
 
 .content-layout {
-  position: relative;
+  /* position: relative; */
+  flex-direction: column;
   min-height: 95vh;
   margin: auto;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .modal-layout {
@@ -25,6 +27,12 @@ h2 {
   text-align: center;
 }
 
+.stats-button,
+.reset-button {
+  margin-top: 3rem;
+  padding: 0.5rem 1.25rem;
+}
+
 .button-layout {
   margin-top: 2rem;
   justify-content: space-around;
@@ -37,4 +45,8 @@ h2 {
 
 .position-relative {
   position: relative;
+}
+
+.justify-content-center {
+  justify-content: center;
 }

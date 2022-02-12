@@ -3,29 +3,37 @@ var correctLetters = 0;
 var wrongLetters = 0;
 
 var $allSpans = document.querySelectorAll('span');
-var $testButton = document.querySelector('#test-button');
 var $modal = document.querySelector('#modal');
 var $overlay = document.querySelector('#overlay');
 var $noButton = document.querySelector('#no-button');
 var $yesButton = document.querySelector('#yes-button');
 var $correctAnswers = document.querySelector('#correct-answers');
 var $wrongAnswers = document.querySelector('#wrong-answers');
+var $statsButton = document.querySelector('#stats-button');
+var $resetButton = document.querySelector('#reset-button');
+var $backupResetButton = document.querySelector('#backup-reset-button');
+var resetButton = true;
+// eslint-disable-next-line no-unused-vars
+var backupResetButton = false;
 
 document.addEventListener('keydown', typingTutor);
-$testButton.addEventListener('click', testingButton);
-$noButton.addEventListener('click', handleNoButton);
-$yesButton.addEventListener('click', handleYesButton);
+$statsButton.addEventListener('click', handleShowStats);
+$noButton.addEventListener('click', closeModal);
+$yesButton.addEventListener('click', resetGame);
+$resetButton.addEventListener('click', resetGame);
+$backupResetButton.addEventListener('click', resetGame);
 
-function testingButton(event) {
-  if (event.target === $testButton) {
-    $overlay.classList.remove('hidden');
-    $modal.classList.remove('hidden');
+function handleShowStats(event) {
+  if (event.target === $statsButton) {
+    openModal();
   }
 }
 
 function openModal() {
-  $overlay.classList.remove('hidden');
   $modal.classList.remove('hidden');
+  $modal.classList.add('modal-animation');
+  $overlay.classList.remove('hidden');
+  $overlay.classList.add('overlay-animation');
 }
 
 function typingTutor(event) {
@@ -47,29 +55,50 @@ function typingTutor(event) {
 
   if (currentLetterIndex === $allSpans.length) {
     openModal();
+    $resetButton.classList.add('hidden');
+    $backupResetButton.classList.add('hidden');
+    $statsButton.classList.remove('hidden');
     $correctAnswers.textContent = `Correct: ${correctLetters}!`;
     if (wrongLetters > 0) {
-      $wrongAnswers.textContent = `Wrong: ${wrongLetters} :(`;
+      $wrongAnswers.textContent = `Wrong: ${wrongLetters} 😭`;
     } else {
-      $wrongAnswers.textContent = `Wrong: ${wrongLetters}! :D`;
+      $wrongAnswers.textContent = 'Wrong: None! 😍';
     }
   }
 }
 
-function handleNoButton(event) {
+function closeModal(event) {
   if (event.target === $noButton) {
     $modal.classList.add('hidden');
     $overlay.classList.add('hidden');
   }
 }
 
-function handleYesButton(event) {
-  if (event.target === $yesButton) {
+function resetButtonShifting() {
+  if (resetButton === true) {
+    $backupResetButton.classList.remove('hidden');
+    $resetButton.classList.add('hidden');
+    backupResetButton = true;
+    resetButton = false;
+  } else {
+    $backupResetButton.classList.add('hidden');
+    $resetButton.classList.remove('hidden');
+    backupResetButton = false;
+    resetButton = true;
+  }
+}
+
+function resetGame(event) {
+  if (event.target === $yesButton ||
+    event.target === $resetButton ||
+    event.target === $backupResetButton) {
     currentLetterIndex = 0;
     correctLetters = 0;
     wrongLetters = 0;
     $modal.classList.add('hidden');
     $overlay.classList.add('hidden');
+    $statsButton.classList.add('hidden');
+    resetButtonShifting();
     for (var i = 0; i < $allSpans.length; i++) {
       $allSpans[i].classList.remove('correct-choice');
       if (i > 0) {

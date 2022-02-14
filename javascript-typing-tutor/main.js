@@ -1,6 +1,7 @@
 var currentLetterIndex = 0;
 var correctLetters = 0;
 var wrongLetters = 0;
+var allAttempts = 0;
 
 var $allSpans = document.querySelectorAll('span');
 var $modal = document.querySelector('#modal');
@@ -12,6 +13,7 @@ var $wrongAnswers = document.querySelector('#wrong-answers');
 var $statsButton = document.querySelector('#stats-button');
 var $resetButton = document.querySelector('#reset-button');
 var $backupResetButton = document.querySelector('#backup-reset-button');
+var $accuracy = document.querySelector('#accuracy');
 var resetButton = true;
 // eslint-disable-next-line no-unused-vars
 var backupResetButton = false;
@@ -39,6 +41,7 @@ function openModal() {
 function typingTutor(event) {
 
   $allSpans[currentLetterIndex].classList.add('border-bottom');
+  allAttempts++;
   if (event.key === $allSpans[currentLetterIndex].textContent) {
     $allSpans[currentLetterIndex].classList.remove('wrong-choice');
     $allSpans[currentLetterIndex].classList.add('correct-choice');
@@ -58,7 +61,9 @@ function typingTutor(event) {
     $resetButton.classList.add('hidden');
     $backupResetButton.classList.add('hidden');
     $statsButton.classList.remove('hidden');
+    var accuracy = Math.round(100 * (correctLetters / allAttempts));
     $correctAnswers.textContent = `Correct: ${correctLetters}!`;
+    $accuracy.textContent = `Accuracy: ${accuracy}%`;
     if (wrongLetters > 0) {
       $wrongAnswers.textContent = `Wrong: ${wrongLetters} 😭`;
     } else {
@@ -95,6 +100,7 @@ function resetGame(event) {
     currentLetterIndex = 0;
     correctLetters = 0;
     wrongLetters = 0;
+    allAttempts = 0;
     $modal.classList.add('hidden');
     $overlay.classList.add('hidden');
     $statsButton.classList.add('hidden');

@@ -1,0 +1,52 @@
+h2 {
+  margin-top: 0;
+}
+
+.content-layout {
+  /* position: relative; */
+  flex-direction: column;
+  min-height: 95vh;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-layout {
+  width: 40%;
+  height: 425px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stats-button,
+.reset-button {
+  margin-top: 3rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.button-layout {
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+
+.yes-button,
+.no-button {
+  padding: 0.75rem 1.5rem;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.justify-content-center {
+  justify-content: center;
+}

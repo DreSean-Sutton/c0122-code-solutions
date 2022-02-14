@@ -1,0 +1,186 @@
+:root {
+  --correct-choice-color: rgb(25 205 28);
+  --wrong-choice-color: rgb(248 6 6);
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h2,
+p {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: monospace;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h1 > span {
+  padding-bottom: 1rem;
+  white-space: pre;
+}
+
+.border-bottom {
+  border-bottom: 4px solid;
+}
+
+.correct-choice {
+  color: var(--correct-choice-color);
+}
+
+.wrong-choice {
+  color: var(--wrong-choice-color);
+}
+
+.stats-button {
+  background-color: var(--correct-choice-color);
+}
+
+.reset-button {
+  position: relative;
+  right: 2%;
+  background-color: var(--wrong-choice-color);
+}
+
+.stats-button,
+.reset-button {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: monospace;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* MODAL SECTION */
+
+.modal-layout {
+  background: linear-gradient(90deg, hsl(141deg 91% 58%), hsl(216deg 100% 44%));
+}
+
+.modal-animation {
+  transform: scale(1);
+  animation: modal-scale-up 300ms;
+}
+
+@keyframes modal-scale-up {
+  0% {
+    transform: scale(0.01);
+  }
+
+  20% {
+    transform: scale(0.2);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  40% {
+    transform: scale(0.3);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  60% {
+    transform: scale(0.5);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  80% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.yes-button {
+  background-color: green;
+}
+
+.no-button {
+  background-color: red;
+}
+
+.yes-button,
+.no-button {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 200ms;
+}
+
+.yes-button:hover,
+.no-button:hover,
+.stats-button:hover,
+.reset-button:hover {
+  transform: scale(1.1);
+}
+
+.yes-button:active,
+.no-button:active,
+.stats-button:active,
+.reset-button:active {
+  transform: translateY(5px);
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0 0 0 / 85%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.overlay-animation {
+  animation: overlay-scale-up 500ms;
+}
+
+@keyframes overlay-scale-up {
+  0% {
+    background-color: rgba(0 0 0 / 0%);
+  }
+
+  100% {
+    background-color: rgba(0 0 0 / 85%);
+  }
+}
+
+#test-button {
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+}

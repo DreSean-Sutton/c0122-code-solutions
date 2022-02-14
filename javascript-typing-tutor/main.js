@@ -12,18 +12,13 @@ var $correctAnswers = document.querySelector('#correct-answers');
 var $wrongAnswers = document.querySelector('#wrong-answers');
 var $statsButton = document.querySelector('#stats-button');
 var $resetButton = document.querySelector('#reset-button');
-var $backupResetButton = document.querySelector('#backup-reset-button');
 var $accuracy = document.querySelector('#accuracy');
-var resetButton = true;
-// eslint-disable-next-line no-unused-vars
-var backupResetButton = false;
 
 document.addEventListener('keydown', typingTutor);
 $statsButton.addEventListener('click', handleShowStats);
 $noButton.addEventListener('click', closeModal);
 $yesButton.addEventListener('click', resetGame);
 $resetButton.addEventListener('click', resetGame);
-$backupResetButton.addEventListener('click', resetGame);
 
 function handleShowStats(event) {
   if (event.target === $statsButton) {
@@ -59,7 +54,6 @@ function typingTutor(event) {
   if (currentLetterIndex === $allSpans.length) {
     openModal();
     $resetButton.classList.add('hidden');
-    $backupResetButton.classList.add('hidden');
     $statsButton.classList.remove('hidden');
     var accuracy = Math.round(100 * (correctLetters / allAttempts));
     $correctAnswers.textContent = `Correct: ${correctLetters}!`;
@@ -79,36 +73,23 @@ function closeModal(event) {
   }
 }
 
-function resetButtonShifting() {
-  if (resetButton === true) {
-    $backupResetButton.classList.remove('hidden');
-    $resetButton.classList.add('hidden');
-    backupResetButton = true;
-    resetButton = false;
-  } else {
-    $backupResetButton.classList.add('hidden');
-    $resetButton.classList.remove('hidden');
-    backupResetButton = false;
-    resetButton = true;
-  }
-}
-
 function resetGame(event) {
   if (event.target === $yesButton ||
-    event.target === $resetButton ||
-    event.target === $backupResetButton) {
+    event.target === $resetButton) {
     currentLetterIndex = 0;
     correctLetters = 0;
     wrongLetters = 0;
     allAttempts = 0;
     $modal.classList.add('hidden');
     $overlay.classList.add('hidden');
+    $resetButton.classList.remove('hidden');
     $statsButton.classList.add('hidden');
-    resetButtonShifting();
+    $resetButton.blur();
     for (var i = 0; i < $allSpans.length; i++) {
       $allSpans[i].classList.remove('correct-choice');
+      $allSpans[i].classList.remove('wrong-choice');
       if (i > 0) {
-        $allSpans[i].classList.remove('wrong-choice', 'border-bottom');
+        $allSpans[i].classList.remove('border-bottom');
       }
     }
   }

@@ -1,0 +1,27 @@
+:root {
+  --container-border: 1px solid black;
+  --arrow-font-size: 4rem;
+  --circle-font-size: 4rem;
+}
+
+/* CAROUSEL SECTION */
+
+.container-style {
+  border: var(--container-border);
+}
+
+.arrow-icon {
+  font-size: var(--arrow-font-size);
+  font-weight: 900;
+}
+
+.circle-div {
+  width: 15px;
+  min-height: 15px;
+  border-radius: 10rem;
+  border: 3px solid black;
+}
+
+.black-circle {
+  background-color: black;
+}

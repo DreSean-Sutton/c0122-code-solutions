@@ -1,0 +1,43 @@
+section {
+  margin: 2rem auto;
+  border: 3px solid black;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* CAROUSEL SECTION */
+
+.img-layout {
+  width: 40%;
+  margin: auto;
+}
+
+.content-layout {
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto 0;
+}
+
+.arrow-icon {
+  position: relative;
+  top: 1.5rem;
+}
+
+.circle-div {
+  margin-bottom: 2rem;
+}
+
+/* UTILITY CLASSES */
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}

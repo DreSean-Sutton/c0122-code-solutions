@@ -12,7 +12,6 @@ Account.prototype.deposit = function (amount) {
   if (newTransaction.amount > 0 &&
     Number.isInteger(newTransaction.amount)) {
     this.transactions.push(newTransaction);
-    console.log(this.transactions);
     return true;
   }
   return false;
@@ -24,18 +23,19 @@ Account.prototype.withdraw = function (amount) {
   if (newTransaction.amount > 0 &&
     Number.isInteger(newTransaction.amount)) {
     this.transactions.push(newTransaction);
-    console.log(this.transactions);
     return true;
   }
   return false;
 };
 
 Account.prototype.getBalance = function () {
-  // debugger;
   var balance = 0;
   for (var i = 0; i < this.transactions.length; i++) {
-    balance += this.transactions.amount[i];
-    console.log(balance);
+    if (this.transactions[i].type === 'deposit') {
+      balance += this.transactions[i].amount;
+    } else {
+      balance -= this.transactions[i].amount;
+    }
   }
   return balance;
 };

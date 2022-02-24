@@ -1,10 +1,12 @@
 let currentPicIndex = 0;
+const intervalId = null;
 
-var manageClicks = {
+const manageCarousel = {
   leftArrow: handleLeftArrow,
   rightArrow: handleRightArrow,
   circles: handleCircles,
-  imageSwap: handleImageSwap
+  imageSwap: handleImageSwap,
+  interval: intervalTimer
 };
 
 const $leftArrow = document.querySelector('#left-arrow');
@@ -13,9 +15,11 @@ const $pokemonImageDivs = document.querySelectorAll('.img-layout');
 const $circleParent = document.querySelector('#circle-parent');
 const $circles = document.querySelectorAll('.circle-div');
 
-$leftArrow.addEventListener('click', manageClicks.leftArrow);
-$rightArrow.addEventListener('click', manageClicks.rightArrow);
-$circleParent.addEventListener('click', manageClicks.circles);
+$leftArrow.addEventListener('click', manageCarousel.leftArrow);
+$rightArrow.addEventListener('click', manageCarousel.rightArrow);
+$circleParent.addEventListener('click', manageCarousel.circles);
+
+manageCarousel.interval(intervalId);
 
 function handleLeftArrow(event) {
   if (currentPicIndex === 0) {
@@ -23,7 +27,9 @@ function handleLeftArrow(event) {
   } else {
     currentPicIndex--;
   }
-  manageClicks.imageSwap();
+  manageCarousel.imageSwap();
+  clearInterval(intervalId);
+  manageCarousel.interval(intervalId);
 }
 
 function handleRightArrow(event) {
@@ -32,7 +38,9 @@ function handleRightArrow(event) {
   } else {
     currentPicIndex++;
   }
-  manageClicks.imageSwap();
+  manageCarousel.imageSwap();
+  clearInterval(intervalId);
+  manageCarousel.interval(intervalId);
 }
 
 function handleCircles(event) {
@@ -40,7 +48,9 @@ function handleCircles(event) {
     return;
   }
   currentPicIndex = event.target.dataset.circleIndex * 1;
-  manageClicks.imageSwap();
+  manageCarousel.imageSwap();
+  clearInterval(intervalId);
+  manageCarousel.interval(intervalId);
 }
 
 function handleImageSwap() {
@@ -56,4 +66,12 @@ function handleImageSwap() {
       $circles[i].classList.remove('black-circle');
     }
   }
+  clearInterval(intervalId);
+  manageCarousel.interval(intervalId);
+}
+
+function intervalTimer(id) {
+  id = setInterval(() => {
+    manageCarousel.rightArrow();
+  }, 1000);
 }

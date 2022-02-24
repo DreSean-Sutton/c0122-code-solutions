@@ -23,7 +23,7 @@ img {
   margin: 1rem auto 0;
 }
 
-.arrow-icon {
+.arrow-icon-layout {
   position: relative;
   top: 1.5rem;
 }
@@ -32,12 +32,9 @@ img {
   margin-bottom: 2rem;
 }
 
-/* UTILITY CLASSES */
-
-.justify-content-center {
+.circle-layout {
+  width: 25%;
+  margin: auto;
   justify-content: center;
-}
-
-.align-items-center {
   align-items: center;
 }

@@ -4,6 +4,10 @@
   --circle-font-size: 4rem;
 }
 
+img {
+  user-select: none;
+}
+
 /* CAROUSEL SECTION */
 
 .container-style {
@@ -13,6 +17,7 @@
 .arrow-icon {
   font-size: var(--arrow-font-size);
   font-weight: 900;
+  cursor: pointer;
 }
 
 .circle-div {
@@ -20,6 +25,7 @@
   min-height: 15px;
   border-radius: 10rem;
   border: 3px solid black;
+  cursor: pointer;
 }
 
 .black-circle {

@@ -20,31 +20,34 @@
   <section class="container">
     <div class="row content-layout">
       <div class="arrow-icon-layout">
-        <i class="fa-solid fa-angle-left arrow-icon"></i>
+        <i id="left-arrow" class="fa-solid fa-angle-left arrow-icon"></i>
       </div>
-      <div class="img-layout">
-        <img src="images/025.png" alt="pikachu">
+      <div data-img-index="0" class="img-layout">
+        <img class="pokemon-image" src="images/025.png" alt="Pikachu">
       </div>
-      <div class="img-layout hidden">
-        <img src="images/001.png" alt="pikachu">
+      <div data-img-index="1" class="img-layout hidden">
+        <img class="pokemon-image" src="images/001.png" alt="Bulbusaur">
       </div>
-      <div class="img-layout hidden">
-        <img src="images/004.png" alt="pikachu">
+      <div data-img-index="2" class="img-layout hidden">
+        <img class="pokemon-image" src="images/004.png" alt="Squirtle">
       </div>
-      <div class="img-layout hidden">
-        <img src="images/025.png" alt="pikachu">
+      <div data-img-index="3" class="img-layout hidden">
+        <img class="pokemon-image" src="images/007.png" alt="Cubone">
       </div>
-      <div class="img-layout hidden">
-        <img src="images/025.png" alt="pikachu">
+      <div data-img-index="4" class="img-layout hidden">
+        <img class="pokemon-image" src="images/039.png" alt="Jigglypuff">
       </div>
       <div class="arrow-icon-layout">
-        <i class="fa-solid fa-angle-right arrow-icon"></i>
+        <i id="right-arrow" class="fa-solid fa-angle-right arrow-icon"></i>
       </div>
     </div>
-    <div class="row justify-content-center align-items-center">
-      <div class="circle-div margin-auto black-circle"></div>
+    <div id="circle-parent" class="row circle-layout">
+      <div data-circle-index="0" class="circle-div margin-auto black-circle"></div>
+      <div data-circle-index="1" class="circle-div margin-auto"></div>
+      <div data-circle-index="2" class="circle-div margin-auto"></div>
+      <div data-circle-index="3" class="circle-div margin-auto"></div>
+      <div data-circle-index="4" class="circle-div margin-auto"></div>
     </div>
-    <!-- <i class="fa-solid fa-circle circle-icon"></i> -->
   </section>
   <script src="main.js"></script>
 </body>

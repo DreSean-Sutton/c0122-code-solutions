@@ -1,5 +1,5 @@
 let currentPicIndex = 0;
-const intervalId = null;
+let intervalId = null;
 
 const manageCarousel = {
   leftArrow: handleLeftArrow,
@@ -19,7 +19,7 @@ $leftArrow.addEventListener('click', manageCarousel.leftArrow);
 $rightArrow.addEventListener('click', manageCarousel.rightArrow);
 $circleParent.addEventListener('click', manageCarousel.circles);
 
-manageCarousel.interval(intervalId);
+manageCarousel.interval();
 
 function handleLeftArrow(event) {
   if (currentPicIndex === 0) {
@@ -28,8 +28,6 @@ function handleLeftArrow(event) {
     currentPicIndex--;
   }
   manageCarousel.imageSwap();
-  clearInterval(intervalId);
-  manageCarousel.interval(intervalId);
 }
 
 function handleRightArrow(event) {
@@ -39,8 +37,6 @@ function handleRightArrow(event) {
     currentPicIndex++;
   }
   manageCarousel.imageSwap();
-  clearInterval(intervalId);
-  manageCarousel.interval(intervalId);
 }
 
 function handleCircles(event) {
@@ -49,8 +45,6 @@ function handleCircles(event) {
   }
   currentPicIndex = event.target.dataset.circleIndex * 1;
   manageCarousel.imageSwap();
-  clearInterval(intervalId);
-  manageCarousel.interval(intervalId);
 }
 
 function handleImageSwap() {
@@ -66,12 +60,12 @@ function handleImageSwap() {
       $circles[i].classList.remove('black-circle');
     }
   }
-  clearInterval(intervalId);
-  manageCarousel.interval(intervalId);
+  manageCarousel.interval();
 }
 
-function intervalTimer(id) {
-  id = setInterval(() => {
+function intervalTimer() {
+  clearInterval(intervalId);
+  intervalId = setInterval(() => {
     manageCarousel.rightArrow();
-  }, 1000);
+  }, 3000);
 }

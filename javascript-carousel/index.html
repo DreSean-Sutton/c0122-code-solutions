@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <section class="container">
+    <div class="row content-layout">
+      <div class="arrow-icon-layout">
+        <i id="left-arrow" class="fa-solid fa-angle-left arrow-icon"></i>
+      </div>
+      <div data-img-index="0" class="img-layout">
+        <img class="pokemon-image" src="images/025.png" alt="Pikachu">
+      </div>
+      <div data-img-index="1" class="img-layout hidden">
+        <img class="pokemon-image" src="images/001.png" alt="Bulbusaur">
+      </div>
+      <div data-img-index="2" class="img-layout hidden">
+        <img class="pokemon-image" src="images/004.png" alt="Squirtle">
+      </div>
+      <div data-img-index="3" class="img-layout hidden">
+        <img class="pokemon-image" src="images/007.png" alt="Cubone">
+      </div>
+      <div data-img-index="4" class="img-layout hidden">
+        <img class="pokemon-image" src="images/039.png" alt="Jigglypuff">
+      </div>
+      <div class="arrow-icon-layout">
+        <i id="right-arrow" class="fa-solid fa-angle-right arrow-icon"></i>
+      </div>
+    </div>
+    <div id="circle-parent" class="row circle-layout">
+      <div data-circle-index="0" class="circle-div margin-auto black-circle"></div>
+      <div data-circle-index="1" class="circle-div margin-auto"></div>
+      <div data-circle-index="2" class="circle-div margin-auto"></div>
+      <div data-circle-index="3" class="circle-div margin-auto"></div>
+      <div data-circle-index="4" class="circle-div margin-auto"></div>
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>

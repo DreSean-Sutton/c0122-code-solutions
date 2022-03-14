@@ -42,8 +42,8 @@
     addToGreetings('namaste', greetings);
     logAllGreetings(greetings);
 
-    console.log('This variable is currently undefined due to hoisting, please fix: ', variable);
-    var variable = 'meow';
+    const variable = 'meow';
+    console.log('This variable is no longer undefined due to hoisting, thank you: ', variable);
   </script>
 </body>
 </html>

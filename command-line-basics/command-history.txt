@@ -1,0 +1,1001 @@
+ 1166  git branch javascript-modal
+ 1167  git switch javascript-modal 
+ 1168  git status
+ 1169  git add javascript-modal/
+ 1170  git commit -m "Clicking open modal slowly opens modal and clicking no slowly closes modal. Currently need to fix modal display on refresh"
+ 1171  git push origin javascript-modal 
+ 1172  git status
+ 1173  git add javascript-modal/
+ 1174  git commit -m "Modal now correctly displays and hides when clicked"
+ 1175  git push origin javascript-modal 
+ 1176  git pull origin master
+ 1177  git restore javascript-light-bulb/
+ 1178  cd repos/c0122-code-solutions/
+ 1179  git status
+ 1180  git pull origin master
+ 1181  cd repos/c0122-code-solutions/
+ 1182  git branch dom-event-delegation
+ 1183  git status
+ 1184  git switch dom-event-delegation 
+ 1185  git status
+ 1186  git switch master
+ 1187  git restore javascript-modal/
+ 1188  git switch dom-event-delegation 
+ 1189  git status
+ 1190  git add dom-event-delegation/
+ 1191  git commit -m "Finished dom-event-delegation assignment"
+ 1192  git push origin dom-event-delegation 
+ 1193  git status
+ 1194  git switch master
+ 1195  git branch javascript-typing-tutor
+ 1196  git switch javascript-typing-tutor 
+ 1197  git status 
+ 1198  git status
+ 1199  git add javascript-typing-tutor/
+ 1200  git commit -m "Work in progess"
+ 1201  git push origin javascript-typing-tutor 
+ 1202  git switch master
+ 1203  git status
+ 1204  git pull origin master
+ 1205  git branch javascript-view-swapping
+ 1206  git switch javascript-view-swapping 
+ 1207  git stastus
+ 1208  git status
+ 1209  git add javascript-view-swapping/
+ 1210  git commit -m "Finished javascript-view-swapping assignment"
+ 1211  git push origin javascript-view-swapping 
+ 1212  git switch javascript-typing-tutor 
+ 1213  git status
+ 1214  git statsus
+ 1215  git commit -m "Finished typing tutor. Now working on the optionals"
+ 1216  git add javascript-typing-tutor/
+ 1217  git commit -m "Finished typing tutor. Now working on the optionals"
+ 1218  git push orgin javascript-typing-tutor 
+ 1219  git push origin javascript-typing-tutor 
+ 1220  git switch javascript-view-swapping 
+ 1221  git statsus
+ 1222  git status
+ 1223  git add javascript-view-swapping/
+ 1224  git commit -m "Fixed useless main.js code"
+ 1225  git push origin javascript-view-swapping 
+ 1226  git switch css-transitions 
+ 1227  git status
+ 1228  git add css-transitions/
+ 1229  git commit -m "On transition properties I added the property names that they are supposed to focus on"
+ 1230  git push origin css-transitions 
+ 1231  git switch masterr
+ 1232  git switch master
+ 1233  git pull origin master
+ 1234  git switch javascript-typing-tutor 
+ 1235  git status
+ 1236  git add javascript-typing-tutor
+ 1237  git status
+ 1238  git commit -m "Currently making modal"
+ 1239  git push origin javascript-typing-tutor 
+ 1240  git switch mster
+ 1241  git switch master
+ 1242  git status
+ 1243  git restore javascript-typing-tutor/
+ 1244  git branch css-responsive-layout
+ 1245  git switch css-responsive-layout 
+ 1246  git status
+ 1247  git switch javascript-typing-tutor 
+ 1248  git remove javascript-typing-tutor/
+ 1249  git -d javascript-typing-tutor/
+ 1250  git restore javascript-typing-tutor/
+ 1251  git status
+ 1252  git switch javascript-typing-tutor 
+ 1253  git switch css-responsive-layout 
+ 1254  git statu
+ 1255  git status
+ 1256  git add css-responsive-layout/
+ 1257  git commit -m "Finished css-respsponsive-layout assignment"
+ 1258  git push origin css-responsive-layout 
+ 1259  git status
+ 1260  git switch javascript-typing-tutor 
+ 1261  git status
+ 1262  git add javascript-typing-tutor/
+ 1263  git commit -m "Modal is set up, working on fixing animation not working"
+ 1264  git add javascript-typing-tutor/
+ 1265  git commit -m "Modal is set up, working on fixing animation not working"
+ 1266  git add javascript-typing-tutor/
+ 1267  git commit -m "Modal is set up, working on fixing animation not working"
+ 1268  git push origin javascript-typing-tutor 
+ 1269  git switch master
+ 1270  git branch javascript-and-json
+ 1271  git switch javascript-and-json 
+ 1272  git status
+ 1273  git add javascript-and-json/
+ 1274  git commit -m "Finishe javascript-and-json assignment"
+ 1275  git push origin javascript-and-json 
+ 1276  git status
+ 1277  git switch javascript-typing-tutor 
+ 1278  git restore javascript-typing-tutor/
+ 1279  git status
+ 1280  git add javascript-typing-tutor/
+ 1281  git commit -m "Modal will now open and close when test button is pressed. Working on having it appear automatically when a user finishes the game"
+ 1282  git push origin javascript-typing-tutor 
+ 1283  git add javascript-typing-tutor/
+ 1284  git commit -m "Modal will now open and close when test button is pressed. Working on having it appear automatically when a user finishes the game"
+ 1285  git push origin javascript-typing-tutor 
+ 1286  git status
+ 1287  git add javascript-typing-tutor/
+ 1288  git commit -m "Finishing the game now brings up a modal that asks if you want to play again"
+ 1289  git push origin javascript-typing-tutor 
+ 1290  git stastus
+ 1291  git status
+ 1292  git add javascript-typing-tutor/
+ 1293  git commit -m "Finishing the game now shows the user how many answers they got right and wrong
+ 1294  "
+ 1295  git push origin javascript-typing-tutor 
+ 1296  git status
+ 1297  git switch master
+ 1298  git pull origin master
+ 1299  git branch javascript-local-storage
+ 1300  git switch javascript-local-storage 
+ 1301  git status
+ 1302  git add javascript-local-storage/
+ 1303  git commit -m "Finished javascript-local-storage assignment"
+ 1304  git push origin javascript-local-storage 
+ 1305  git status
+ 1306  git switch master
+ 1307  git statusg
+ 1308  git status
+ 1309  git pull origin master
+ 1310  git switch javascript-typing-tutor 
+ 1311  git add javascript-typing-tutor/
+ 1312  git status
+ 1313  git add javascript-typing-tutor/
+ 1314  git commit -m "Finished javascript-typing-tutor. Added a reset button during test and a check stats button that shows if you click 'NO' on the modal"
+ 1315  git push origin javascript-typing-tutor 
+ 1316  git status
+ 1317  git switch master
+ 1318  git pull origin master
+ 1319  cd repos/c0122-code-solutions/\
+ 1320  git switch javascript-typing-tutor 
+ 1321  git stastus
+ 1322  git status
+ 1323  git add javascript-typing-tutor/
+ 1324  git commit -m "Modal now shows users their accuracy"
+ 1325  git push origin javascript-typing-tutor 
+ 1326  git status
+ 1327  git add javascript-typing-tutor/
+ 1328  git commit -m "Got rid of second reset button and made it so 1st reset button isn't focused after it's been clicked"
+ 1329  git push origin javascript-typing-tutor 
+ 1330  git switch master
+ 1331  git pull origin master
+ 1332  cd ../codeSignal-JS-solutions/
+ 1333  cd ../c0122-code-solutions/
+ 1334  git status
+ 1335  git switch javascript-typing-tutor 
+ 1336  git stastus
+ 1337  git status
+ 1338  git add javascript-typing-tutor/
+ 1339  git commit -m "Took backup reset button out of HTML.index"
+ 1340  git push origin javascript-typing-tutor 
+ 1341  git status
+ 1342  git switch master
+ 1343  cd ../codeSignal-JS-solutions/
+ 1344  git status
+ 1345  cd ../c0122-code-solutions/
+ 1346  git status
+ 1347  git pull origin master
+ 1348  ls
+ 1349  cd repos/codeSignal-JS-solutions/
+ 1350  git status
+ 1351  add intro-challenges/
+ 1352  git add intro-challenges/
+ 1353  git commit -m "Finished pseudo code and function. Haven't checked results, yet"
+ 1354  git push origin master
+ 1355  cd ../c0122-code-solutions/
+ 1356  cd ..
+ 1357  ls
+ 1358  cd repos/code-journal
+ 1359  git status
+ 1360  git add css/ js/
+ 1361  git commit -m "Now finding the matching entry object in the data model and assign it to the data model's editing property if an edit icon was clicked."
+ 1362  git push origin issue-2-user-can-view-entries 
+ 1363  git status
+ 1364  git add js/
+ 1365  git commit -m " Entry form is now pre-populating with the clicked entry's values from the object found in the data model."
+ 1366  git push origin issue-2-user-can-view-entries 
+ 1367  git status
+ 1368  git add js/
+ 1369  git commit -m " Entry form is now pre-populating with the clicked entry's values from the object found in the data model."
+ 1370  git status
+ 1371  git push origin issue-2-user-can-view-entries 
+ 1372  git status
+ 1373  git add js/
+ 1374  git commit -m "updating an entry now updates data.entries and the DOM as well"
+ 1375  git push origin issue-2-user-can-view-entries 
+ 1376  git status
+ 1377  git add js/
+ 1378  git commit -m "Fixed errors"
+ 1379  git push origin issue-2-user-can-view-entries 
+ 1380  git status
+ 1381  cd  repos/
+ 1382  git clone git@github.com:DreSean-Sutton/week-planner.git
+ 1383  cd week-planner/
+ 1384  npm ci
+ 1385  git status
+ 1386  git branch issue-1-create-entry
+ 1387  git switch issue-1-create-entry 
+ 1388  git status
+ 1389  git stastus
+ 1390  git status
+ 1391  git add index.html 
+ 1392  git commit -m "Reseting repo"
+ 1393  git push origin issue-1-create-entry 
+ 1394  git status
+ 1395  git add .
+ 1396  git status
+ 1397  git commit -m "Setup weekly-planner"
+ 1398  git push origin issue-1-create-entry 
+ 1399  git staus
+ 1400  git status
+ 1401  git add css/ index.html 
+ 1402  git commit -m "Added an h1 element, an 'add entry' button, and styled the 'add entry' button"
+ 1403  git push origin issue-1-create-entry
+ 1404  git status 
+ 1405  git add css/ index.html 
+ 1406  git commit -m "Work in progress"
+ 1407  git push origin issue-1-create-entry 
+ 1408  git status
+ 1409  git add .
+ 1410  git commit -m "Clicking the 'add entry' button now opens the modal and activates the overlay"
+ 1411  git push origin issue-1-create-entry 
+ 1412  git commit -m "Clicking the 'add entry' button now opens the modal and activates the overlay" --no-verify
+ 1413  git git status
+ 1414  git status
+ 1415  git push origin issue-1-create-entry 
+ 1416  git status
+ 1417  git add index.html js/
+ 1418  git commit -m "Work in progress"
+ 1419  git commit -m "Work in progress" --no-verify
+ 1420  git push origin issue-1-create-entry 
+ 1421  git status
+ 1422  git add .
+ 1423  git commit -m "formValues object now has a property with the data-day of the current selection" --no-verify
+ 1424  git push origin issue-1-create-entry 
+ 1425  git status
+ 1426  git add js/
+ 1427  git commit -m "Saving an entry now shows it on the correct property in the data model"
+ 1428  git commit -m "Saving an entry now shows it on the correct property in the data model" --no-verify
+ 1429  git push origin issue-1-create-entry 
+ 1430  git stastu
+ 1431  git status
+ 1432  gita dd js/
+ 1433  git commit -m "Each entry now gets it's own special incrementing entry id specific to it's day"
+ 1434  git push origin issue-1-create-entry 
+ 1435  git add js/
+ 1436  git commit -m "Each entry now gets it's own special incrementing entry id specific to it's day" --no-verify
+ 1437  git push origin issue-1-create-entry 
+ 1438  git status
+ 1439  git add css/ js/
+ 1440  git commit -m "Finished issue 1"
+ 1441  git push origin issue-1-create-entry 
+ 1442  git switch master
+ 1443  git statuis
+ 1444  git status
+ 1445  git pull origin master
+ 1446  git status
+ 1447  cd ../c0122-code-solutions/
+ 1448  git branch javascript-custom-medthods
+ 1449  git -d javascript-custom-medthods
+ 1450  git branch -d javascript-custom-medthods 
+ 1451  git branch javascript-custom-methods
+ 1452  git swithc javascript-v
+ 1453  git switch javascript-custom-methods 
+ 1454  git status
+ 1455  git add javascript-custom-methods/
+ 1456  git commit -m "Finished javascript-custom-methods"
+ 1457  git push origin javascript-custom-methods 
+ 1458  git status
+ 1459  cd ../week-planner/
+ 1460  cd ../c0122-code-solutions/
+ 1461  git switch master
+ 1462  git pull origin master
+ 1463  cd ../week-planner/
+ 1464  git status
+ 1465  git branch issue-2-view-entries
+ 1466  git switch issue-2-view-entries 
+ 1467  git status
+ 1468  git add css/ js/
+ 1469  git commit -m "Created a helper object and gave it the properties addEntry and overlay"
+ 1470  git push origin issue-2-view-entries 
+ 1471  git status
+ 1472  cd ../c0122-code-solutions/
+ 1473  git branch javascript-this
+ 1474  git switch javascript-this 
+ 1475  git status
+ 1476  giut add javascript-this/
+ 1477  git commit -m "Finished javascript-this assignment"
+ 1478  giut add javascript-this/
+ 1479  git add javascript-this/
+ 1480  git commit -m "Finished javascript-this assignment"
+ 1481  git push origin javascript-this 
+ 1482  cd ../week-planner/
+ 1483  git status
+ 1484  cd ../c0122-code-solutions/
+ 1485  git status
+ 1486  git switch master
+ 1487  git pull origin master
+ 1488  git status
+ 1489  git branch javascript-prototypes/
+ 1490  git switch javascript-prototypes/
+ 1491  git switch javascript-prototypes
+ 1492  git branch javascript-prototypes
+ 1493  git switch javascript-prototypes
+ 1494  git status
+ 1495  git add javascript-prototypes/
+ 1496  git status
+ 1497  git commit -m "Finished javascript-prototypes assignment"
+ 1498  git push origin javascript-prototypes 
+ 1499  git statsus
+ 1500  git status
+ 1501  cd ../codeSignal-JS-solutions/
+ 1502  git status
+ 1503  git add  .
+ 1504  git status
+ 1505  git commit -m "Finished challenge-25"
+ 1506  git push origin master
+ 1507  git status
+ 1508  git add .
+ 1509  git commit -m "Finished challenge-26 and set up challenge-27"
+ 1510  git push origin master
+ 1511  git status
+ 1512  git add intro-challenges/
+ 1513  git commit -m "Finished challenge-27"
+ 1514  git push origin master
+ 1515  git status
+ 1516  git add .
+ 1517  git commit -m "Finished challenge-28"
+ 1518  git push origin master
+ 1519  git add .
+ 1520  git commit -m "Finished challenge-28. Forgot to press save before commit"
+ 1521  git push origin master
+ 1522  git status
+ 1523  cd ../c0122-code-solutions/
+ 1524  git status
+ 1525  git switch master
+ 1526  git pull origin master
+ 1527  git branch javascript-constructors
+ 1528  git switch javascript-constructors 
+ 1529  git status
+ 1530  git add javascript-constructors/
+ 1531  git status
+ 1532  git commit -m "Finished javascript-constructor-assignment"
+ 1533  git status
+ 1534  git push origin javascript-constructors 
+ 1535  git switch master 
+ 1536  git pull origin master 
+ 1537  cd ../codeSignal-JS-solutions/
+ 1538  git status
+ 1539  git add intro-challenges/
+ 1540  git status
+ 1541  git commit -m "Finished challenge-29 and set up challenge-30"
+ 1542  git push origin mater
+ 1543  git push origin master
+ 1544  git status
+ 1545  git add intro-challenges/
+ 1546  git commit -m "Pseudo code didn't update"
+ 1547  git push origin master
+ 1548  git status
+ 1549  git add intro-challenges/
+ 1550  git commit -m "FInished challenge-30"
+ 1551  git push origin master 
+ 1552  cd ../c0122-code-solutions/
+ 1553  git status
+ 1554  git add javascript-constructors/
+ 1555  git commit -m "Fixed example-constructor.js issue"
+ 1556  git push origin master
+ 1557  git status
+ 1558  cd ../codeSignal-JS-solutions/
+ 1559  git status
+ 1560  git add . 
+ 1561  git commit -m "finished challenge-31 and deleted script tag in index.html"
+ 1562  git push origin master
+ 1563  git status
+ 1564  cd ../c0122-code-solutions/
+ 1565  git statu
+ 1566  git status
+ 1567  git pull origin master
+ 1568  git branch javascript-bank
+ 1569  git switch javascript-bank 
+ 1570  git status
+ 1571  git add javascript-bank/
+ 1572  git commit -m "Work in progress"
+ 1573  git push origin master
+ 1574  git commit -m "Work in progress" --no-verify
+ 1575  git push origin master
+ 1576  git status
+ 1577  git add .
+ 1578  git commit -m "Finished javascript-bank assignment"
+ 1579  git push origin javascript-bank 
+ 1580  git status
+ 1581  git switch master
+ 1582  git branch javascript-timers
+ 1583  git switch javascript-timers 
+ 1584  git commit -m "Finished javascript-timers assignment"
+ 1585  git push origin javascript-timers 
+ 1586  git add javascript-timers/
+ 1587  git commit -m "Finished javascript-timers assignment"
+ 1588  git push origin javascript-timers 
+ 1589  git status
+ 1590  git add javascript-timers/
+ 1591  git commit -m "Changed intervals.js so 0 isn't shown in h1's textContent"
+ 1592  git push origin javascript-timers 
+ 1593  git switch master 
+ 1594  cd ../codeSignal-JS-solutions/
+ 1595  git sstatus
+ 1596  git status
+ 1597  git add .
+ 1598  git commit -m 
+ 1599  FG
+ 1600  git status
+ 1601  git add .
+ 1602  git status
+ 1603  git commit -m "Finished challenge-32 and setup challenge 33"
+ 1604  git push origin master 
+ 1605  cd ../c0122-code-solutions/
+ 1606  git branch 
+ 1607  git branch javascript-carousel
+ 1608  git pull origin mastrer
+ 1609  git pull origin master
+ 1610  git switch javascript-carousel 
+ 1611  git status
+ 1612  git add .
+ 1613  git commit -m "Work in progress"
+ 1614  git push origin master
+ 1615  git status
+ 1616  git add .
+ 1617  git commit -m "Finished javascript-carousel assignment"
+ 1618  git push origin javascript-carousel 
+ 1619  git switch master 
+ 1620  git pull origin master
+ 1621  git status
+ 1622  cd ./codeS
+ 1623  cd ../codeSignal-JS-solutions/
+ 1624  git status
+ 1625  git add .
+ 1626  git commit -m "Finished challenge-34"
+ 1627  git push origin master
+ 1628  git status
+ 1629  git add .
+ 1630  git commit -m "Finished challenge-35"
+ 1631  git push origin master
+ 1632  git status]
+ 1633  git status
+ 1634  git add .
+ 1635  git commit -m "Finished challenge-36"
+ 1636  git push origin master
+ 1637  git commit -m "Finished challenge-36"
+ 1638  cd ../c0122-code-solutions/
+ 1639  git switch javascript-carousel 
+ 1640  git pull origin master
+ 1641  git switch master
+ 1642  git status
+ 1643  git add .
+ 1644  git commit -m "Need to fix timer"
+ 1645  git push origin javascript-carousel 
+ 1646  cd ../codeSignal-JS-solutions/
+ 1647  git satus
+ 1648  git status
+ 1649  git add .
+ 1650  git commit -m "Finished challenge 37 and added an interview test challenge given by LearningFuze"
+ 1651  git push origin master
+ 1652  git stats
+ 1653  git status
+ 1654  git add .
+ 1655  git commit -m "Finished challenge-38"
+ 1656  git push origin master
+ 1657  cd ../
+ 1658  git --global--list
+ 1659  git --global --list
+ 1660  git config --global --list
+ 1661  http https://example.com
+ 1662  http https://www.google.com
+ 1663  http https://example.com --verbose
+ 1664  # Upgrade httpie
+ 1665  choco upgrade httpie
+ 1666  $choco upgrade httpie
+ 1667  $ choco upgrade httpie
+ 1668  choco upgrade httpie
+ 1669  choco install httpie
+ 1670  http --verbose https://example.com
+ 1671  http https://example.com
+ 1672  http -v https://example.com
+ 1673  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+ 1674  http --body GET https://jsonplaceholder.typicode.com/users>http-messages/users.json
+ 1675  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+ 1676  cd repos/c0122-code-solutions/
+ 1677  git status
+ 1678  git add http-messages/
+ 1679  git status
+ 1680  git commit -m "Finished http-messages assignment"
+ 1681  git push origin http-messages 
+ 1682  git status
+ 1683  git switch master
+ 1684  git pull origin master
+ 1685  git branch javascript-ajax
+ 1686  git switch javascript-ajax 
+ 1687  git status
+ 1688  git add javascript-ajax/
+ 1689  git commit -m "Finished javascriptt-ajax-assignment"
+ 1690  git push origin javascript-ajax 
+ 1691  git status
+ 1692  git switch javascript-carousel 
+ 1693  git status
+ 1694  git add javascript-carousel/
+ 1695  git commit -m "implemented setInterval to make the carousel switch on it's own"
+ 1696  git push origin javascript-carousel 
+ 1697  git switch master
+ 1698  git pull origin master
+ 1699  git status
+ 1700  git switch master
+ 1701  cd ../codeSignal-JS-solutions/
+ 1702  git status
+ 1703  git add intro-challenges/
+ 1704  git add .
+ 1705  git commit -m "Finished challenge-39 and set up challenge-40"
+ 1706  git push origin master
+ 1707  git status
+ 1708  git add intro-challenges/
+ 1709  git commit -m "Finished challenge-40"
+ 1710  git push origin master
+ 1711  http GET https://api.kuroganehammer.com/api/characters/75
+ 1712  http GET https://api.kuroganehammer.com/api/characters/71game=ultimate
+ 1713  http GET https://api.kuroganehammer.com/api/characters/71?game=ultimate
+ 1714  http GET https://api.kuroganehammer.com/api/characters/1?game=ultimate
+ 1715  http GET https://api.kuroganehammer.com/api/characters/01?game=ultimate
+ 1716  http GET https://api.kuroganehammer.com/api/characters/1
+ 1717  http GET https://api.kuroganehammer.com/api/characters/1?game=ultimate
+ 1718  http://api.kuroganehammer.com/api/characters/name/Bayonetta/characterattributes?game=ultimate
+ 1719  http GET http://api.kuroganehammer.com/api/characters/name/Bayonetta/characterattributes?game=ultimate
+ 1720  http GET https://api.kuroganehammer.com/api/characters/1?game=ultimate
+ 1721  http GET https://api.kuroganehammer.com/api/characters/1 ?game=ultimate
+ 1722  http GET https://api.kuroganehammer.com/api/characters/1/?game=ultimate
+ 1723  http GET https://api.kuroganehammer.com/api/characters/1\?game=ultimate
+ 1724  http GET https://api.kuroganehammer.com/api/characters/1\?game==ultimate
+ 1725  http GET https://api.kuroganehammer.com/api/characters/1?game==ultimate
+ 1726  http GET https://api.kuroganehammer.com/api/characters/1?game=ultimate
+ 1727  http GET https://api.kuroganehammer.com/api/characters/01?game=ultimate
+ 1728  http GET https://api.kuroganehammer.com/api/characters/1
+ 1729  http GET https://api.kuroganehammer.com/api/characters/1?game=ultimate
+ 1730  http GET https://api.kuroganehammer.com/api/characters/1?game=ultimate/
+ 1731  http GET https://api.kuroganehammer.com/api/characters/1?game=ultimate
+ 1732  http GET https://api.kuroganehammer.com/api/characters/20?game=ultimate
+ 1733  cd ..
+ 1734  git clone git@github.com:DreSean-Sutton/ajax-project.git
+ 1735  cd ajax-project/
+ 1736  npm ci
+ 1737  git status
+ 1738  git add .
+ 1739  git commit -m "Finished basic html-skeleton"
+ 1740  git status
+ 1741  git branch issue-1-user-can-see-character-list
+ 1742  git switch issue-1-user-can-see-character-list 
+ 1743  git status
+ 1744  git add .
+ 1745  git commit -m "Finished basic html-skeleton" --no-verify
+ 1746  git status
+ 1747  git push origin issue-1-user-can-see-character-list 
+ 1748  git status
+ 1749  git add .
+ 1750  git commit -m "Finished styling a little more of the layout and set up dummy data for future DOM usage"
+ 1751  git add .
+ 1752  git commit -m "Finished styling a little more of the layout and set up dummy data for future DOM usage" --no-verify
+ 1753  git push origin issue-1-user-can-see-character-list 
+ 1754  git status
+ 1755  git add .
+ 1756  git commit -m "Work in progress"
+ 1757  git commit -m "Work in progress" --no-verify
+ 1758  git push origin issue-1-user-can-see-character-list 
+ 1759  git status
+ 1760  git add .
+ 1761  git commit -m "data model nearly done. Also, added media queries to card layout"
+ 1762  git push origin issue-1-user-can-see-character-list 
+ 1763  log]\
+ 1764  \git log
+ 1765  git status
+ 1766  git add css/
+ 1767  git commit -m "Card layout complete"
+ 1768  git status
+ 1769  git add .
+ 1770  git commit -m "Finished data tree"
+ 1771  git push origin issue-1-user-can-see-character-list 
+ 1772  git status
+ 1773  git add .
+ 1774  git commit -m "Characters are correctly being rendered to the page when renderCharacterCard function is called"
+ 1775  git add .
+ 1776  git commit -m "Characters are correctly being rendered to the page when renderCharacterCard function is called"
+ 1777  git push origin issue-1-user-can-see-character-list 
+ 1778  git status
+ 1779  git add .
+ 1780  git commit -m "Work in progress"
+ 1781  git push origin issue-1-user-can-see-character-list 
+ 1782  git status
+ 1783  git add .
+ 1784  git commit -m "Saving incase I mess up this data model"
+ 1785  git push origin issue-1-user-can-see-character-list 
+ 1786  git status
+ 1787  git add .
+ 1788  git commit -m "Saving incase I mess up this data model"
+ 1789  git commit --amend -m "Refactored code to greatly lower the amount of code needed on the data model and implemented the numbering of the characters in my render function instead"
+ 1790  git status
+ 1791  git push origin issue-1-user-can-see-character-list 
+ 1792  git status
+ 1793  git add .
+ 1794  git commit -m "Made sure everything was working fine in a private browser and cleaned up styling"
+ 1795  git push origin issue-1-user-can-see-character-list 
+ 1796  cd repos/ajax-project/
+ 1797  git status
+ 1798  git add .
+ 1799  git commit -m "." --no-verify
+ 1800  git status
+ 1801  git push origin master
+ 1802  cd repos/ajax-project/
+ 1803  git statu
+ 1804  git status
+ 1805  git add .
+ 1806  git commit -m "Temporarily removed the deserved abuse of Ness from application"
+ 1807  git statu
+ 1808  s
+ 1809  git status
+ 1810  git push origin user-can-delete-favorites 
+ 1811  git status
+ 1812  git switch mastewre
+ 1813  git switch master
+ 1814  git pull origin mastgedr
+ 1815  git pull origin master
+ 1816  git status
+ 1817  git branch code-cleanup
+ 1818  git switch code-cleanup 
+ 1819  git status
+ 1820  git add .
+ 1821  git commit -m "Made all css kebob-case and deleted unused files"
+ 1822  git push origin code-cleanup 
+ 1823  git status
+ 1824  git add .
+ 1825  git commit -m "Took out unused footer css selector and added a line-height of 1.6 to the body element"
+ 1826  git push origin code-cleanup 
+ 1827  git status
+ 1828  git add css/
+ 1829  git commit -m "Adjusted line-height for modal to 1.2 to keep elements from going past the vh"
+ 1830  git push origin code-cleanup 
+ 1831  git status
+ 1832  git switch masterr
+ 1833  git switch master
+ 1834  git pull origin mster
+ 1835  git pull origin master
+ 1836  git branch 
+ 1837  git branch -d issue-1-user-can-see-character-list issue-2-user-can-see-character-details issue-3-user-can-favorite-character-and-view-favorites user-can-delete-favorites code-cleanup 
+ 1838  git status
+ 1839  git pull origin master
+ 1840  git branch user-interfaces
+ 1841  git status
+ 1842  git add .
+ 1843  git commit -m "Adjusted media queries to create a more fluid user experience"
+ 1844  git push origin master
+ 1845  git branch 
+ 1846  git branch user-interfaces 
+ 1847  git switch user-interfaces 
+ 1848  git pull origin master
+ 1849  git status
+ 1850  git statu
+ 1851  git status
+ 1852  git statu
+ 1853  git status
+ 1854  git add .
+ 1855  git commit -m "All asynchronous functionsn now show a loading spinner when API data is loading"
+ 1856  git push origin user-interfaces 
+ 1857  git status
+ 1858  cd repos/codeSignal-JS-solutions/
+ 1859  git status
+ 1860  git add .
+ 1861  git sat;us
+ 1862  git status
+ 1863  git add .
+ 1864  git commit -m "Finished challenge 41 of Code Signal: 'DigitDegree'"
+ 1865  git push origin master 
+ 1866  cd ../ajax-project/
+ 1867  git switch master
+ 1868  git status
+ 1869  git pull origin master
+ 1870  git status
+ 1871  git branch project-polish
+ 1872  git switch project-polish 
+ 1873  git status
+ 1874  git add .
+ 1875  git commit -m "Forgot to put hidden class back on error-message-list"
+ 1876  git push origin project-polish 
+ 1877  git remote set-url origin git@github.com:DreSean-Sutton/smash-cove.git
+ 1878  cd ..
+ 1879  mv ajax-project/ smash-cove
+ 1880  mv ajax-project smash-cove
+ 1881  cd smash-cove
+ 1882  cd repos
+ 1883  mv ajax-project/ smash-cove
+ 1884  git mv ajax-project/ smash-cove
+ 1885  cd ajax-project/
+ 1886  cd ..
+ 1887  pwd
+ 1888  cd
+ 1889  cd  repos
+ 1890  ls
+ 1891  cd ajax-project/
+ 1892  log
+ 1893  git log
+ 1894  git switch master
+ 1895  git switch project-polish 
+ 1896  cd ..
+ 1897  mv ajax-project/ smash-cove
+ 1898  cd smash-cove/
+ 1899  git status
+ 1900  git add .
+ 1901  git status
+ 1902  git commit -m "
+ 1903  go
+ 1904  "
+ 1905  "git commit --amend -m "Changed project name and added a personal favicon"
+ 1906  "
+ 1907  git commit -m --amend "Changed project name and added a personal favicon"
+ 1908  "
+ 1909  git commit --amend -m "Changed project name and added a personal favicon"
+ 1910  "
+ 1911  git status
+ 1912  "
+ 1913  git status
+ 1914  git push origin project-polish 
+ 1915  git status
+ 1916  GIT STASTUS
+ 1917  git status
+ 1918  git add .
+ 1919  git commit -m "Added Open Graph meta tags to index.html, so they will show properly when linked on social media"
+ 1920  git push origin project-polish 
+ 1921  git switch master
+ 1922  git pull origin master
+ 1923  git status
+ 1924  git add js/
+ 1925  git add .
+ 1926  git commit -m "Changed main.js images to relative URLs"
+ 1927  git push origin master
+ 1928  git status
+ 1929  git js/
+ 1930  git add .
+ 1931  git commit -m "Now, changed images in main.js to relative URLs"
+ 1932  git push origin master
+ 1933  git status
+ 1934  git add js/
+ 1935  git commit -m "Testing"
+ 1936  git push origin master
+ 1937  git status
+ 1938  git add .
+ 1939  git commit =m "Fixed images not working on live server"
+ 1940  git commit -m "Fixed images not working on live server"
+ 1941  git push origin master
+ 1942  git remote set-url origin git@github.com:DreSean-Sutton/smashmate.git
+ 1943  cd ./.
+ 1944  cd ..
+ 1945  mv smash-cove/ smashmate
+ 1946  cd smashmate/
+ 1947  git status
+ 1948  git add .
+ 1949  git commit -m "Changed name"
+ 1950  git push origin master
+ 1951  git status
+ 1952  git pull origin master
+ 1953  git status
+ 1954  git add .
+ 1955  git commit -m "Changed title and name in README. Also changed the name of background images":
+ 1956  git push origin master
+ 1957  git status
+ 1958  git add .
+ 1959  git commit -m 
+ 1960  git commit -m "."
+ 1961  git push origin master
+ 1962  git status
+ 1963  git add .
+ 1964  git commit -m "Deleted unused photo, changed og meta tags, and changed background image carousel to shuffle bettween images after 20s instead of 10s"
+ 1965  git push origin master
+ 1966  git status
+ 1967  git add .
+ 1968  git commit -m "Characters on the list are no longer being duplicated and images on character list have a little bit of padding-top.
+ 1969  "git push origin master
+ 1970  git commit -m "Characters on the list are no longer being duplicated and images on character list have a little bit of padding-top.
+ 1971  " git push origin master
+ 1972  git commit -m "Characters on the list are no longer being duplicated and images on character list have a little bit of padding-top.
+ 1973  "
+ 1974  git push origin master
+ 1975  git status
+ 1976  git add js/
+ 1977  git commit -m "reorganized main.js file, deleted console.log(), and changed it so data table error messages disapear when you go back to the character list"
+ 1978  gitpush origin master
+ 1979  git push origin master
+ 1980  git pull origin master
+ 1981  cd ../c0122-code-solutions/
+ 1982  git switch master
+ 1983  git pull origin master
+ 1984  cd ../smashmate/
+ 1985  git status
+ 1986  git add .
+ 1987  git status
+ 1988  gitcommit -m "changed card-column width to 19.25% on viewports 768px or more"
+ 1989  git push origin master
+ 1990  git status
+ 1991  git push origin master
+ 1992  git status
+ 1993  cd  repos
+ 1994  cd smashmate/
+ 1995  git status
+ 1996  git push origin master
+ 1997  git commit -m "changed card-column width to 19.25% on viewports 768px or more"
+ 1998  git push origin master
+ 1999  git status
+ 2000  cd  ../c0122-code-solutions/
+ 2001  git status
+ 2002  git pull origin msater
+ 2003  git pull origin master
+ 2004  git status
+ 2005  git branch es6-const-let
+ 2006  git switch es6-const-let 
+ 2007  git status
+ 2008  git add .
+ 2009  git commit -m "finished es6-const-let assignment"
+ 2010  git push origin es6-const-let 
+ 2011  git status
+ 2012  git add .
+ 2013  git commit -m "Fixed variable hoisting issue on line 45 and 46"
+ 2014  git push origin es6-const-let 
+ 2015  git switch master
+ 2016  git status
+ 2017  git pull origin master
+ 2018  git status
+ 2019  git branch es6-template-literals
+ 2020  git switch es6-template-literals 
+ 2021  git status
+ 2022  git add .
+ 2023  git commit -m "Finished e6-template-literals assignment"
+ 2024  git push origin es6-
+ 2025  git push origin es6-template-literals 
+ 2026  git status
+ 2027  git add .
+ 2028  git commit -m "Fixed error"
+ 2029  git push origin es6-template-literals 
+ 2030  git status
+ 2031  git switch master
+ 2032  git pull origin master
+ 2033  git status
+ 2034  git add review.md 
+ 2035  git commit -m "Added review.md to code solutions directory
+"
+ 2036  git push origin master
+ 2037  git branch es6-destructuring
+ 2038  git switch es6-destructuring 
+ 2039  git status
+ 2040  git add es6-destructuring/
+ 2041  git commit -m "finished es6-destructuring assignment"
+ 2042  git push origin es6-destructuring 
+ 2043  git status
+ 2044  git switch master
+ 2045  git status
+ 2046  git branch es6-arrow-functions
+ 2047  git switch es6-arrow-functions 
+ 2048  git status
+ 2049  git add .
+ 2050  git commit -m "Finished es6-arr-arrow-functions assignment"
+ 2051  git push origin es6-arrow-functions 
+ 2052  git switch master
+ 2053  git branch command-line-basics
+ 2054  git switch command-line-basics 
+ 2055  cd command-line-basics/
+ 2056  pwd
+ 2057  man man
+ 2058  man cat
+ 2059  man cat --version
+ 2060  man cat
+ 2061  cat -A --show-all hubris.text
+ 2062  cat hubris.text
+ 2063  pwd
+ 2064  cd ../
+ 2065  pwd
+ 2066  ls
+ 2067  cd command-line-basics/
+ 2068  cd
+ 2069  cd repos/c0122-code-solutions/command-line-basics/
+ 2070  ls
+ 2071  man cat
+ 2072  cat -A laziness.txt 
+ 2073  cat -A impatience.txt 
+ 2074  cat -A laziness.txt 
+ 2075  cat -A impatience.txt 
+ 2076  cat -A hubris.txt 
+ 2077  man cat
+ 2078  cat -A laziness.txt impatience.txt hubris.txt 
+ 2079  cat -A laziness.txt impatience.txt hubris.txt > three-virtues.text
+ 2080  cat -A three-virtues.text 
+ 2081  man ls
+ 2082  ls
+ 2083  ls -a
+ 2084  ls -F
+ 2085  ls -a lfz-staff/
+ 2086  ls -F lfz-staff/
+ 2087  ls lfz-staff/
+ 2088  ls -aF lfz-staff/ > lfz-staff/contents.txt
+ 2089  cat -A lfz-staff/contents.txt 
+ 2090  ls -a lfz-staff/contents.txt 
+ 2091  ls -a lfz-staff/contents.txt/
+ 2092  ls -F lfz-staff/contents.txt/
+ 2093  ls -F lfz-staff/contents.txt
+ 2094  ls -F
+ 2095  ls -F lfz-staff/
+ 2096  man pwd
+ 2097  pwd
+ 2098  man pwd
+ 2099  pwd -L
+ 2100  pwd -P
+ 2101  pwd > i-was-here.txt
+ 2102  pwd
+ 2103  las
+ 2104  ls -a
+ 2105  man cat
+ 2106  cat i-was-here.txt 
+ 2107  cat -A i-was-here.txt 
+ 2108  cat -a i-was-here.txt 
+ 2109  man echo
+ 2110  echo 'Hello, World!'
+ 2111  echo "Hello, World!" > hello.txt
+ 2112  cat hello.txt 
+ 2113  echo hello.txt 
+ 2114  man cat
+ 2115  ls
+ 2116  ls -F
+ 2117  ls -a
+ 2118  cat hello.txt 
+ 2119  man touch
+ 2120  touch tag-youre-it.txt
+ 2121  ls
+ 2122  man touch
+ 2123  touch snoot/ > boop.txt
+ 2124  touch snoot/ > snoot/boop.txt
+ 2125  ls snoot/
+ 2126  man mkdir
+ 2127  mkdir parent
+ 2128  ls 
+ 2129  man mkdir
+ 2130  mkdir -p parent/child/grandchild
+ 2131  ls parent/
+ 2132  ls parent/child/grandchild/
+ 2133  ls parent/child/
+ 2134  touch parent/child/grandchild/ > .gitkeep
+ 2135  touch parent/child/grandchild/ > parent.gitkeep/child.gitkeep/grandchild.gitkeep
+ 2136  touch parent/child/grandchild/ > parent.gitkeep
+ 2137  touch parent/child/grandchild/ > parent.gitkeep > parent/child.gitkeep > parent/child/grandchild.gitkeep
+ 2138  touch parent/child/grandchild > parent/.gitkeep > parent/child/.gitkeep > parent/child/grandchild/.gitkeep
+ 2139  touch > parent/.gitkeep > parent/child/.gitkeep > parent/child/grandchild/.gitkeep
+ 2140  touch parent/ > parent/.gitkeep > parent/child/.gitkeep > parent/child/grandchild/.gitkeep
+ 2141  ls -a parent/child/grandchild/
+ 2142  man mv
+ 2143  ls
+ 2144  mv pokiemans/ pokemon
+ 2145  ls
+ 2146  ls -a
+ 2147  ls
+ 2148  man rm
+ 2149  git status
+ 2150  ls
+ 2151  git statu
+ 2152  rm lol.txt 
+ 2153  ls 
+ 2154  man rm
+ 2155  rm -r kill-me/
+ 2156  ls
+ 2157  man cp
+ 2158  cp and-then.txt > no-and-then.txt
+ 2159  cp and-then.txt no-and-then.txt
+ 2160  ls
+ 2161  cat no-and-then.txt 
+ 2162  cat and-then.txt 
+ 2163  man history 
+ 2164  history
+ 2165  history > command-history.txt

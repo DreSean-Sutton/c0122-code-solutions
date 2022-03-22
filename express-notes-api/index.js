@@ -54,7 +54,7 @@ app.post('/api/notes', (req, res) => {
         const error = function newError() {
           return { error: 'An unexpected error occurred.' };
         };
-        console.error(error());
+        console.error(err);
         res.status(500).json(error());
       } else {
         res.status(201).json(newNote);
@@ -86,7 +86,7 @@ app.delete('/api/notes/:id', (req, res) => {
           return { error: 'An unexpected error occurred.' };
         };
         console.error(error());
-        res.status(500).json(error());
+        res.status(500).json(err);
       } else {
         res.status(204).send();
       }
@@ -124,7 +124,7 @@ app.put('/api/notes/:id', (req, res) => {
         const error = function newError() {
           return { error: 'An unexpected error occurred.' };
         };
-        console.error(error());
+        console.error(err);
         res.status(500).json(error());
       } else {
         res.status(200).json(updatedNote);

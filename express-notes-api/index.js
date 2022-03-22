@@ -36,30 +36,31 @@ app.get('/api/notes/:id', (req, res) => {
 app.post('/api/notes', (req, res) => {
   const newNote = req.body;
   console.error(newNote.content);
-  if (newNote.content === undefined) {
+  if (req.body.content === undefined) {
     const error = function newError() {
       return { error: 'content is a required field' };
     };
     console.error(error());
     res.status(400).json(error());
+  } else {
+    const id = dataJSON.nextId;
+    newNote.id = id;
+    dataJSON.notes[id] = newNote;
+    dataJSON.nextId++;
+    console.error(dataJSON);
+    const data = new Uint8Array(Buffer.from(JSON.stringify(dataJSON, null, 2)));
+    fs.writeFile('data.json', data, 'utf-8', err => {
+      if (err) {
+        const error = function newError() {
+          return { error: 'An unexpected error occurred.' };
+        };
+        console.error(error());
+        res.status(500).json(error());
+      } else {
+        res.status(201).json(newNote);
+      }
+    });
   }
-  const id = dataJSON.nextId;
-  newNote.id = id;
-  dataJSON.notes[id] = newNote;
-  dataJSON.nextId++;
-  console.error(dataJSON);
-  const data = new Uint8Array(Buffer.from(JSON.stringify(dataJSON, null, 2)));
-  fs.writeFile('data.json', data, 'utf-8', err => {
-    if (err) {
-      const error = function newError() {
-        return { error: 'An unexpected error occurred.' };
-      };
-      console.error(error());
-      res.status(500).json(error());
-    } else {
-      res.status(201).json(newNote);
-    }
-  });
 });
 
 app.delete('/api/notes/:id', (req, res) => {

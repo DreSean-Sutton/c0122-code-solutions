@@ -1,23 +1,37 @@
-WITH cte_cost AS (
+WITH "cost" AS (
     SELECT
       "title",
       "description",
       "filmId",
-      SUM("replacementCost") as "replacementCost"
+      "length",
+      SUM("replacementCost") AS "replacementCost"
       FROM
         "films"
-      JOIN "inventory" USING ("filmId")
-      JOIN "rentals" USING ("inventoryId")
-      JOIN "payments" AS "p" USING ("rentalId")
+      JOIN
+        "inventory" USING ("filmId")
       GROUP BY
         "filmId"
-        ORDER BY "title" DESC
-)
+), "profit" AS (
     SELECT
-        "title",
-        "description",
-      SUM ("replacementCost")+("p". "amount") as "Revenue"
-      FROM cte_cost
-      JOIN "inventory" USING ("filmId")
-      JOIN "rentals" USING ("inventoryId")
-      JOIN "payments" AS "p" USING ("rentalId")
+      "filmId",
+      SUM("amount") as "moneyGained"
+      FROM
+        "payments"
+      JOIN
+        "rentals" USING ("rentalId")
+      JOIN
+        "inventory" USING ("inventoryId")
+      GROUP BY
+        "filmId"
+)
+SELECT
+  "title",
+  "description",
+  "length",
+  "moneyGained"-"replacementCost" as "totalProfit"
+  FROM
+    "profit"
+  JOIN
+    "cost" USING ("filmId")
+  ORDER BY "totalProfit" DESC
+  LIMIT 5

@@ -3,23 +3,28 @@ const inkling = {
   moves: [
     {
       name: 'jab 1',
-      activeFrames: 3 - 4,
-      totalFrames: 19
+      activeFrames: '3 - 4',
+      totalFrames: '19'
     },
     {
       name: 'jab 2',
-      activeFrames: 2 - 3,
-      totalFrames: 21
+      activeFrames: '2 - 3',
+      totalFrames: '21'
     },
     {
       name: 'jab 3',
-      activeFrames: 4 - 5,
-      totalFrames: 29
+      activeFrames: '4 - 5',
+      totalFrames: '29'
     },
     {
       name: 'rapid jab',
-      activeFrames: 4 '(rehit rate: 3 frames)'
+      activeFrames: '4 (rehit rate: 3 frames)',
+      totalFrames: '-'
     }
-
+  ],
+  attributes: [
+    {
+      something: 'yes'
+    }
   ]
 };

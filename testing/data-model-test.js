@@ -4,7 +4,7 @@ const inkling = {
   id: 1,
   rosterId: 64,
   displayName: 'inkling',
-  moveset:
+  data:
   {
     attacks:
     [

@@ -1,0 +1,64 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+span {
+  font-size: 5rem;
+  user-select: none;
+}
+
+.stopwatch-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.stopwatch-body {
+  color: red;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 5px solid red;
+  border-radius: 300px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 100ms;
+}
+
+.stopwatch-body:active {
+  transform: translateY(10px);
+}
+
+.play-pause-buttons {
+  font-size: 4rem;
+  transition: transform 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.play-pause-buttons:hover {
+  transform: scale(1.2);
+}
+
+.play-pause-buttons:active {
+  transform: scale(0.9);
+}
+
+.play-color {
+  color: green;
+}
+
+.pause-color {
+  color: grey;
+}
+
+.play-border {
+  border-color: green;
+}
+
+.pause-border {
+  border-color: grey;
+}

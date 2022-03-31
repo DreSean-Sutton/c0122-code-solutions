@@ -1,0 +1,28 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+span {
+  font-size: 5rem;
+}
+
+.stopwatch-layout {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.stopwatch-body {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+  border-radius: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-pause-buttons {
+  font-size: 3rem;
+}

@@ -1,0 +1,121 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1,
+a {
+  text-transform: capitalize;
+}
+
+a {
+  font-size: 1.25rem;
+  display: block;
+  margin-top: 2.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+.navbar-container {
+  padding: 1rem;
+}
+
+.navbar-layout {
+  position: fixed;
+  background-color: white;
+  height: 100vh;
+  padding: 1rem 1rem 1rem 5rem;
+  width: 275px;
+}
+
+.navbar {
+  font-size: 2rem;
+  transition: transform 300ms;
+  cursor: pointer;
+}
+
+.navbar:hover {
+  transform: scale(1.2);
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.navbar-in {
+  transform: translateX(-60px);
+  animation: navbar-in 150ms;
+}
+
+@keyframes navbar-in {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  80% {
+    transform: translateX(0);
+  }
+}
+
+.navbar-out {
+  transform: translateX(-300px);
+  animation: navbar-out 150ms;
+}
+
+@keyframes navbar-out {
+  0% {
+    transform: translateX(-60px);
+  }
+
+  20% {
+    transform: translateX(0);
+  }
+}
+
+.overlay-on {
+  display: block;
+  background-color: rgba(0 0 0 /85%);
+  transition: background-color;
+  animation: overlay-on 200ms;
+}
+
+@keyframes overlay-on {
+  0% {
+    display: block;
+    background-color: rgba(0 0 0 / 0%);
+  }
+
+  100% {
+    background-color: rgba(0 0 0 / 85%);
+  }
+}
+
+.overlay-off {
+  display: hidden;
+  background-color: rgba(0 0 0 /0%);
+  transition: background-color;
+  animation: overlay-off 200ms;
+}
+
+@keyframes overlay-off {
+  0% {
+    display: block;
+    background-color: rgba(0 0 0 / 85%);
+  }
+
+  100% {
+    display: hidden;
+    background-color: rgba(0 0 0 / 0%);
+  }
+}

@@ -23,10 +23,11 @@ export default class Form extends React.Component {
   }
 
   render() {
+    const emailValue = this.state.emailValue;
     return (
       <form onSubmit={ this.handleSubmit }>
         <label htmlFor="email">email
-          <input onChange={ this.handleChange } id="email" type="email" />
+          <input onChange={ this.handleChange } id="email" type="email" value={emailValue} />
         </label>
         <input type="submit" value="Sign Up"/>
       </form>

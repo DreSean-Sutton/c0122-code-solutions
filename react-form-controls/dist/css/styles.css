@@ -1,0 +1,20 @@
+body {
+  text-transform: capitalize;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input {
+  border: 0.5px solid rgb(194 194 194);
+  border-radius: 4px;
+}
+
+input[type="email"]:hover {
+  border-color: rgb(187 0 187);
+}
+
+input[type="submit"] {
+  padding: 0.25rem;
+}

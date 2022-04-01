@@ -1,0 +1,21 @@
+.hidden {
+  display: none !important;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: hidden;
+}

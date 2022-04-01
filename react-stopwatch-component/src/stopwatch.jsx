@@ -84,5 +84,4 @@ class Stopwatch extends React.Component {
   }
 }
 
-/* <FontAwesomeIcon icon="fa-solid fa-circle-pause" />; */
 export default Stopwatch;

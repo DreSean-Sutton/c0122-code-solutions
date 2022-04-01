@@ -1,9 +1,10 @@
 .hidden {
-  display: none;
+  display: none !important;
 }
 
-.webpage {
+.root {
   width: 100vw;
+  height: 100vh;
 }
 
 .row {
@@ -16,5 +17,5 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0 0 0 / 85%);
+  display: hidden;
 }

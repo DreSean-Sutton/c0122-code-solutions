@@ -52,8 +52,8 @@ export default class Accordion extends React.Component {
     const allLanguages = languages.map(languages => {
       return (
         <React.Fragment key={ languages.id }>
-          <div className="header-layout border-bottom" data-index={ languages.id }>{ languages.name }</div>
-          <div className="text-layout border-bottom" data-index={ languages.id}>{ languages.text}</div>
+          <div className="header-layout" data-index={ languages.id }>{ languages.name }</div>
+          <div className="text-layout" data-index={ languages.id}>{ languages.text}</div>
         </React.Fragment>
       );
     });

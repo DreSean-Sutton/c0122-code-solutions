@@ -1,0 +1,36 @@
+.arrow-icons {
+  font-size: 4rem;
+  position: relative;
+  top: 3rem;
+  cursor: pointer;
+}
+
+.content-layout {
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.circles-layout {
+  width: 50%;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.circles {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid black;
+  border-radius: 30rem;
+  cursor: pointer;
+}
+
+.circle-active {
+  background-color: black;
+}
+
+.circles:hover {
+  background-color: grey;
+}

@@ -60,12 +60,12 @@ class Stopwatch extends React.Component {
   coloring() {
     if (this.state.isReset) return 'stop';
     if (this.state.isTicking) return 'play';
-    if (!this.state.iTicking) return 'pause';
+    if (!this.state.isTicking) return 'pause';
   }
 
   helperClasses() {
     if (this.state.isTicking) return 'pause';
-    if (!this.state.iTicking) return 'play';
+    if (!this.state.isTicking) return 'play';
   }
 
   render() {

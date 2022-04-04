@@ -5,7 +5,6 @@ export default class Carousel extends React.Component {
     super(props);
     this.state = {
       currentImgId: '001',
-      currentIndex: 0,
       intervalId: null
     };
     this.handleClick = this.handleClick.bind(this);
@@ -24,40 +23,42 @@ export default class Carousel extends React.Component {
   }
 
   handleLeftSwap() {
-    const currentIndex = this.state.currentIndex;
     const imageArray = this.props.imageArray;
     this.manageCarousel();
-
-    if (currentIndex === 0) {
+    if (imageArray[0].id === this.state.currentImgId) {
       this.setState({
-        currentImgId: imageArray[imageArray.length - 1].id,
-        currentIndex: imageArray.length - 1
+        currentImgId: imageArray[imageArray.length - 1].id
       });
-      return;
+    } else {
+      for (let i = 0; i < imageArray.length; i++) {
+        if (this.state.currentImgId === imageArray[i].id) {
+          this.setState({
+            currentImgId: imageArray[i - 1].id
+          });
+        }
+      }
     }
-    this.setState({
-      currentImgId: imageArray[currentIndex - 1].id,
-      currentIndex: currentIndex - 1
-    });
-
   }
 
   handleRightSwap() {
-    const currentIndex = this.state.currentIndex;
     const imageArray = this.props.imageArray;
     this.manageCarousel();
 
-    if (currentIndex === imageArray.length - 1) {
+    if (this.state.currentImgId === imageArray[imageArray.length - 1].id) {
       this.setState({
-        currentImgId: imageArray[0].id,
-        currentIndex: 0
+        currentImgId: imageArray[0].id
       });
-      return;
+
+    } else {
+      for (let i = 0; i < imageArray.length; i++) {
+        if (this.state.currentImgId === imageArray[i].id) {
+
+          this.setState({
+            currentImgId: imageArray[i + 1].id
+          });
+        }
+      }
     }
-    this.setState({
-      currentImgId: imageArray[currentIndex + 1].id,
-      currentIndex: currentIndex + 1
-    });
   }
 
   handleClick(event) {

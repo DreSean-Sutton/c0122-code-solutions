@@ -30,7 +30,10 @@ app.post('/api/auth/sign-up', (req, res, next) => {
       const sql = `
     INSERT INTO "users" ("username", "hashedPassword")
     VALUES ($1, $2)
-    RETURNING *;
+    RETURNING
+        "username",
+        "createdAt",
+        "userId";
     `;
       const params = [username, result];
       db.query(sql, params)

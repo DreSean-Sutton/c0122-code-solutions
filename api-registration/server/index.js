@@ -38,7 +38,7 @@ app.post('/api/auth/sign-up', (req, res, next) => {
       const params = [username, result];
       db.query(sql, params)
         .then(result => {
-          const newPassword = result.rows;
+          const newPassword = result.rows[0];
           res.status(201).json(newPassword);
         })
         .catch(err => next(err));

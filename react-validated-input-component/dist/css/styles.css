@@ -1,0 +1,38 @@
+label {
+  font-size: 1.2rem;
+  display: block;
+}
+
+input {
+  padding: 0.25rem 0.5rem;
+  border: 3px solid black;
+  border-radius: 4px;
+}
+
+p {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.input-line {
+  align-items: center;
+}
+
+.icons {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.content-layout {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}

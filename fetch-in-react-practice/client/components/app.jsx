@@ -96,7 +96,7 @@ export default class App extends React.Component {
           .then(res => res.json())
           .then(data => {
             const todosArray = this.state.todos.slice(0);
-            todosArray[currentIndex].isCompleted = toggleUpdate.isCompleted;
+            todosArray.splice([currentIndex], 1, data);
             this.setState({
               todos: todosArray
             });

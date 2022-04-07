@@ -1,0 +1,19 @@
+User can sign up:
+The user interacts with the client and inputs a unique username with a password. They are sent to the server and if they're viable,
+the password is hashed by argon2. Then, the username and hashed password is queried as a `select` request to be added to the database.
+The database sends a response back to the server, which then informs the client whether the username and password were
+successfully updated to the database or not.
+
+User can sign in:
+The user interacts with the client and inputs a unique username with a password. If they're viable, they are sent to the server.
+In the server, it queries a `select` request to the database and grabs the userId and hashedPassword using the client's username if it is in there.
+The server then verifies whether or not the hashedPassword is equal to the client's password. If it's matching,
+the user is given a special token with the userId, their username, and the TOKEN_SECRET.
+
+User can stay signed in (even if they refresh the page):
+When a user signs in, their token is automatically put into their local storage. Any hash changes or refreshing of the page,
+grabs their token from local storage, decodes it, and uses it's information to change the state of the app back to that specific user.
+
+User can sign out:
+When the user signs out, their token is removed from their local storage. User state is also changed to null,
+effectively changing the page back to the homepage.
